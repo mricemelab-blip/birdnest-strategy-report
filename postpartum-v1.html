@@ -1,0 +1,1439 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>产后营养产品线市场调研与产品策划报告 · v2.0</title>
+<meta name="description" content="产后营养修复紧迫性、中西冲突哲学、13+1 SKU、三期订阅盒、合规声称矩阵与上市路径。">
+<style>
+:root{
+  --bg:#F7F3EC;--paper:#FDFAF4;--ink:#2A2521;--navy:#3A2B25;
+  --blue:#B1533C;--blue-soft:#F9ECE6;--amber:#B0832F;--amber-soft:#F6EDDA;
+  --teal:#3D7A6E;--teal-soft:#E6F0EC;--muted:#6E6259;
+  --line:#E7DED1;--line-strong:#D8CBB8;--danger:#A8432F;--danger-soft:#F8E9E3;
+  --radius:10px;--shadow:0 1px 2px rgba(58,43,37,.05),0 8px 24px rgba(58,43,37,.07);
+  --serif:Georgia,"Songti SC","STSong","SimSun",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --mono:"SF Mono","Roboto Mono",Consolas,"Courier New",monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+a.ext{word-break:break-all}
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--blue),var(--amber));z-index:60;transition:width .1s linear}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(247,243,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:56px}
+.brand{font-family:var(--serif);font-weight:700;color:var(--navy);font-size:16px;letter-spacing:.5px;white-space:nowrap}
+.brand .dot{color:var(--amber)}
+.topbar nav{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.topbar nav::-webkit-scrollbar{display:none}
+.topbar nav a{color:var(--muted);font-size:13.5px;padding:6px 10px;border-radius:6px;white-space:nowrap}
+.topbar nav a:hover{background:var(--blue-soft);color:var(--navy);text-decoration:none}
+.toc-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--line-strong);border-radius:8px;padding:6px 12px;font-size:13px;color:var(--navy);cursor:pointer;font-family:var(--sans)}
+header.hero{background:linear-gradient(180deg,#F1E7D8 0%,var(--bg) 100%);border-bottom:1px solid var(--line);padding:64px 0 44px}
+.hero .kicker{font-family:var(--mono);font-size:13px;letter-spacing:2px;color:var(--amber);text-transform:uppercase;margin:0 0 14px}
+.hero h1{font-family:var(--serif);color:var(--navy);font-size:clamp(30px,4.6vw,46px);line-height:1.25;margin:0 0 10px;font-weight:700;letter-spacing:.5px}
+.hero .sub{font-family:var(--serif);color:var(--muted);font-size:clamp(16px,2vw,20px);margin:0 0 26px;line-height:1.6}
+.hero .meta-row{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13.5px;color:var(--muted);margin-bottom:26px}
+.hero .meta-row span b{color:var(--navy);font-weight:600}
+.notice{background:var(--danger-soft);border:1px solid #EBCFC4;border-left:4px solid var(--danger);border-radius:var(--radius);padding:14px 18px;font-size:14px;color:#7A3627;line-height:1.7}
+.policy-hero{background:var(--navy);color:#F3EADF;border-radius:14px;padding:26px 30px;margin-top:26px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.policy-hero::before{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(176,131,47,.35),transparent 70%)}
+.policy-hero .tag{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;color:var(--amber);margin-bottom:8px}
+.policy-hero p{margin:0;font-family:var(--serif);font-size:clamp(17px,2.2vw,21px);line-height:1.7;position:relative}
+.layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:48px;padding:48px 0 80px;align-items:start}
+.toc{position:sticky;top:76px;max-height:calc(100vh - 96px);overflow-y:auto;padding-right:6px}
+.toc h2{font-size:12px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin:0 0 12px;font-weight:700}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc li{margin:0}
+.toc a{display:block;color:var(--muted);font-size:13.5px;padding:5px 10px;border-radius:6px;border-left:2px solid transparent;line-height:1.45}
+.toc a:hover{color:var(--navy);text-decoration:none;background:rgba(177,83,60,.06)}
+.toc a.active{color:var(--blue);border-left-color:var(--blue);background:var(--blue-soft);font-weight:600}
+.toc .toc-app{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line-strong)}
+.toc .toc-app a{font-size:13px}
+main{min-width:0}
+section.chapter{margin-bottom:56px;scroll-margin-top:80px}
+section.chapter > h2{font-family:var(--serif);color:var(--navy);font-size:clamp(23px,3vw,30px);line-height:1.3;margin:0 0 6px;font-weight:700;display:flex;align-items:baseline;gap:14px}
+section.chapter > h2 .num{font-family:var(--mono);font-size:15px;color:var(--amber);font-weight:600;white-space:nowrap}
+.chapter-lead{color:var(--muted);font-size:15px;margin:0 0 22px;max-width:78ch}
+h3.block{font-size:18px;color:var(--navy);margin:30px 0 12px;font-weight:700;font-family:var(--serif)}
+h4.sub{font-size:15.5px;color:var(--navy);margin:22px 0 8px;font-weight:700}
+p{margin:0 0 14px;max-width:78ch}
+ul.bullets{margin:0 0 18px;padding-left:0;list-style:none}
+ul.bullets li{position:relative;padding-left:20px;margin-bottom:10px;max-width:78ch}
+ul.bullets li::before{content:"";position:absolute;left:2px;top:.72em;width:7px;height:7px;border-radius:2px;background:var(--amber)}
+ol.steps{margin:0 0 18px;padding-left:22px}
+ol.steps li{margin-bottom:10px;max-width:78ch}
+.conclusion{font-family:var(--serif);font-size:17px;color:var(--navy);background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:var(--radius);padding:18px 22px;margin:26px 0;line-height:1.8;box-shadow:var(--shadow)}
+.conclusion p{margin:0;max-width:none}
+.callout{border-radius:var(--radius);padding:16px 20px;margin:22px 0;font-size:14.5px;line-height:1.75;border:1px solid var(--line);box-shadow:var(--shadow)}
+.callout .ct{font-weight:700;font-size:13px;letter-spacing:1px;display:block;margin-bottom:6px;font-family:var(--sans)}
+.callout p{margin:0;max-width:none;font-size:14.5px}
+.callout.rule{background:var(--blue-soft);border-color:#ECCDBF}.callout.rule .ct{color:var(--blue)}
+.callout.warn{background:var(--danger-soft);border-color:#EBCFC4}.callout.warn .ct{color:var(--danger)}
+.callout.gold{background:var(--amber-soft);border-color:#E6D3A8}.callout.gold .ct{color:var(--amber)}
+.callout.teal{background:var(--teal-soft);border-color:#C3DCD5}.callout.teal .ct{color:var(--teal)}
+.table-scroll{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--paper);-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+caption{text-align:left;font-size:13px;color:var(--muted);padding:12px 16px 0;caption-side:top}
+th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.65}
+thead th{background:var(--navy);color:#F3EADF;font-weight:600;font-size:13.5px;letter-spacing:.3px;white-space:nowrap;position:sticky;top:0}
+tbody tr:nth-child(even){background:rgba(246,237,218,.35)}
+tbody tr:hover{background:var(--blue-soft)}
+tbody td:first-child{font-weight:600;color:var(--navy)}
+.table-scroll.t-min table{min-width:0}
+.tagline{display:inline-block;font-family:var(--mono);font-size:11.5px;padding:2px 8px;border-radius:20px;font-weight:600;letter-spacing:.3px;white-space:nowrap}
+.tag-warm{background:var(--blue-soft);color:var(--blue)}
+.tag-cup{background:var(--teal-soft);color:var(--teal)}
+.tag-water{background:var(--amber-soft);color:var(--amber)}
+.tag-risk{background:var(--danger-soft);color:var(--danger)}
+.tag-ok{background:var(--teal-soft);color:var(--teal)}
+.ev{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:700;border-radius:3px;padding:1px 6px;color:#fff;margin-right:5px}
+.ev.a{background:var(--navy)}.ev.b{background:var(--blue)}.ev.c{background:var(--amber)}.ev.d{background:var(--muted)}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}
+.stat{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:16px 14px;box-shadow:var(--shadow)}
+.stat .v{font-family:var(--serif);font-size:25px;font-weight:700;color:var(--navy);line-height:1.2}
+.stat .k{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+.lines{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
+.line-card{border-radius:var(--radius);padding:20px;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--navy);box-shadow:var(--shadow)}
+.line-card.warm{border-top-color:var(--blue)}.line-card.cup{border-top-color:var(--teal)}.line-card.water{border-top-color:var(--amber)}
+.line-card h3{margin:0 0 4px;font-family:var(--serif);font-size:18px;color:var(--navy)}
+.line-card .en{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:1px;display:block;margin-bottom:10px}
+.line-card dl{margin:0;font-size:13.5px}
+.line-card dt{color:var(--muted);font-size:12px;margin-top:8px}
+.line-card dd{margin:2px 0 0;line-height:1.6}
+.layer{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.layer .lc{border-radius:var(--radius);padding:18px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}
+.layer .lc .lt{font-family:var(--mono);font-size:12px;letter-spacing:1px;color:var(--amber);font-weight:700;margin-bottom:6px}
+.layer .lc h4{margin:0 0 8px;font-family:var(--serif);font-size:16.5px;color:var(--navy)}
+.layer .lc p{font-size:13.5px;margin:0;max-width:none}
+.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:22px 0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.roadmap .rm{padding:16px 18px;background:var(--paper);border-right:1px solid var(--line)}
+.roadmap .rm:last-child{border-right:none}
+.roadmap .rm .m{font-family:var(--mono);font-size:12.5px;color:var(--amber);font-weight:700;letter-spacing:.5px}
+.roadmap .rm .t{font-weight:700;color:var(--navy);font-size:14.5px;margin:4px 0 6px}
+.roadmap .rm .d{font-size:13px;color:var(--muted);line-height:1.6}
+.refs{list-style:none;margin:18px 0;padding:0}
+.refs li{position:relative;padding:10px 0 10px 8px;border-bottom:1px dashed var(--line-strong);font-size:14px;line-height:1.7}
+footer{border-top:1px solid var(--line);background:#F1E8DA;padding:36px 0 48px}
+footer .wrap{font-size:13.5px;color:var(--muted);line-height:1.8}
+footer .fbrand{font-family:var(--serif);color:var(--navy);font-weight:700;font-size:15px;margin-bottom:8px}
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr;gap:0}
+  .toc{position:static;max-height:none;display:none;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:30px}
+  .toc.open{display:block}.toc-toggle{display:block}.topbar nav{display:none}
+  .lines,.layer,.stat-grid{grid-template-columns:1fr 1fr}
+  .roadmap{grid-template-columns:1fr}.roadmap .rm{border-right:none;border-bottom:1px solid var(--line)}.roadmap .rm:last-child{border-bottom:none}
+}
+@media (max-width:560px){
+  .wrap{padding:0 18px}.lines,.layer,.stat-grid{grid-template-columns:1fr}
+  header.hero{padding:44px 0 34px}.policy-hero{padding:20px 22px}
+  section.chapter > h2{flex-direction:column;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{
+  #progress,.topbar,.toc,.toc-toggle{display:none!important}
+  .layout{display:block}body{background:#fff;font-size:12px}
+  .table-scroll{overflow:visible;box-shadow:none;border:1px solid #999}
+  table{min-width:0;font-size:11px}
+  thead th{background:#eee!important;color:#000!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section.chapter{page-break-inside:avoid;margin-bottom:28px}
+  .callout,.line-card,.roadmap,.conclusion,.layer .lc,.stat{box-shadow:none;break-inside:avoid}
+  a{color:#000;text-decoration:underline}
+  a.ext[href^="http"]::after{content:" (" attr(href) ")";font-size:9px;color:#555}
+}
+</style>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<div class="topbar"><div class="wrap">
+  <div class="brand">小鲜<span class="dot">·</span>产后营养产品线策划</div>
+  <button class="toc-toggle" id="tocToggle" aria-expanded="false" aria-controls="toc">目录 ☰</button>
+  <nav aria-label="章节快捷导航">
+    <a href="#summary">执行摘要</a><a href="#ch1">总览</a><a href="#ch3">营养紧迫性</a><a href="#ch4">中西哲学</a>
+    <a href="#ch6">机构对标</a><a href="#ch9">品牌与竞争</a><a href="#ch10">暖盏</a>
+    <a href="#ch14">合规矩阵</a><a href="#ch16">GTM</a><a href="#refs">参考资料</a>
+  </nav>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <p class="kicker">母婴营养 · 市场调研与产品策划</p>
+  <h1>产后营养产品线<br>市场调研与产品策划报告</h1>
+  <p class="sub">从产后营养修复的紧迫性与中西冲突哲学出发，以文化承接哲学为支点，推导三系列 13+1 款 SKU、三期订阅盒与合规上市路径</p>
+  <div class="meta-row">
+    <span><b>品牌：</b>小鲜孕 / 小鲜后（双候选，客户择一）</span>
+    <span><b>范围：</b>产后 0–12 个月 · 哺乳期营养证据 ＋ 母婴滋补市场 ＋ 三系列产品</span>
+    <span><b>输出：</b>16 章 · 三期订阅盒 · 合规声称矩阵 · 验证与 GTM</span>
+  </div>
+  <div class="notice">
+    <b>版本 2.0（2026-08-30）</b>｜产品与战略内容以《小鲜后产后产品线战略策划 v5》为最新蓝本；营养素数字取自《中国孕妇、乳母膳食指南（2022）》、T/CNSS 014—2022、DRIs 2023、GB 标准与已核实人群研究。<b>SKU 营养数字均为配方框架估算值，以打样送检为准；标注值不得早于实测。</b>本报告不替代法规审核、配方打样、稳定性测试、第三方检测或人体试验。
+  </div>
+</div></header>
+
+<div class="wrap"><div class="layout">
+<aside class="toc" id="toc">
+  <h2>报告目录</h2>
+  <ol>
+    <li><a href="#summary">执行摘要</a></li>
+    <li><a href="#ch1">1 · 产品思路总览</a></li>
+    <li><a href="#ch2">2 · 范围、方法与证据等级</a></li>
+    <li><a href="#ch3">3 · 产后营养修复的研究现状与紧迫性</a></li>
+    <li><a href="#ch4">4 · 中西冲突与承继哲学</a></li>
+    <li><a href="#ch5">5 · 产后四大现实问题与产品应对</a></li>
+    <li><a href="#ch6">6 · 全球产后营养机构案例对标</a></li>
+    <li><a href="#ch7">7 · 文化母体、决策链与记忆</a></li>
+    <li><a href="#ch8">8 · 19 个月子方子留/改/弃</a></li>
+    <li><a href="#ch9">9 · 品牌架构与竞争定位</a></li>
+    <li><a href="#ch10">10 · 暖盏｜热食炖盅线</a></li>
+    <li><a href="#ch11">11 · 轻杯｜冷食燕窝营养杯</a></li>
+    <li><a href="#ch12">12 · 每日水｜有口感的养生补水</a></li>
+    <li><a href="#ch13">13 · 三期订阅配餐平台</a></li>
+    <li><a href="#ch14">14 · 合规边界与声称矩阵</a></li>
+    <li><a href="#ch15">15 · 研发验证与拍板清单</a></li>
+    <li><a href="#ch16">16 · GTM 与商业化路线图</a></li>
+    <li><a href="#ch17">17 · 最终建议</a></li>
+  </ol>
+  <div class="toc-app"><a href="#refs">附录 A · 分级参考资料</a><br><a href="#appx-b">附录 B · 假设与待补数据</a></div>
+</aside>
+
+<main>
+<aside class="toc" id="toc">
+  <h2>报告目录</h2>
+  <ol>
+    <li><a href="#summary">执行摘要</a></li>
+    <li><a href="#ch1">1 · 产品思路总览</a></li>
+    <li><a href="#ch2">2 · 范围、方法与证据等级</a></li>
+    <li><a href="#ch3">3 · 产后营养修复的研究现状与紧迫性</a></li>
+    <li><a href="#ch4">4 · 中西冲突与承继哲学</a></li>
+    <li><a href="#ch5">5 · 产后四大现实问题与产品应对</a></li>
+    <li><a href="#ch6">6 · 全球产后营养机构案例对标</a></li>
+    <li><a href="#ch7">7 · 文化母体、决策链与记忆</a></li>
+    <li><a href="#ch8">8 · 19 个月子方子留/改/弃</a></li>
+    <li><a href="#ch9">9 · 品牌架构与竞争定位</a></li>
+    <li><a href="#ch10">10 · 暖盏｜热食炖盅线</a></li>
+    <li><a href="#ch11">11 · 轻杯｜冷食燕窝营养杯</a></li>
+    <li><a href="#ch12">12 · 每日水｜有口感的养生补水</a></li>
+    <li><a href="#ch13">13 · 三期订阅配餐平台</a></li>
+    <li><a href="#ch14">14 · 合规边界与声称矩阵</a></li>
+    <li><a href="#ch15">15 · 研发验证与拍板清单</a></li>
+    <li><a href="#ch16">16 · GTM 与商业化路线图</a></li>
+    <li><a href="#ch17">17 · 最终建议</a></li>
+  </ol>
+  <div class="toc-app"><a href="#refs">附录 A · 分级参考资料</a><br><a href="#appx-b">附录 B · 假设与待补数据</a></div>
+</aside>
+
+
+
+<!-- 00 执行摘要 -->
+<section class="chapter" id="summary">
+  <h2><span class="num">00</span>执行摘要</h2>
+  <p class="chapter-lead">四句话定位本报告的核心论点。</p>
+  <div class="conclusion">
+    <p><b>一、产后营养修复是一个被低估的公共卫生问题。</b>中国每年约 792 万新生儿背后，是约 792 万处于哺乳期的母亲——她们每日面对 +400 kcal 能量净消耗、80 g/d 蛋白需求、32% 的贫血率、70.6% 的维生素 D 不足、8.1% 的钙达标率、87.5% 的叶酸不足，以及 14.8%–28.4% 的产后抑郁/焦虑症状检出率；若叠加每周 ≥120 分钟的产后力量训练（ACOG/BMJ 2025 推荐），蛋白需求进一步上浮至 1.6–2.0 g/kg/d、总能量额外 +150–300 kcal/d。这并非一般意义上的膳食调养问题，而是涉及数亿家庭、关系母体长期慢性病风险的刚性营养缺口。</p>
+    <p><b>二、中国传统月子营养与现代循证营养学之间存在系统性冲突。</b>月子浓汤靠脂肪乳化获得「浓稠」口感，一碗猪脚汤脂肪约 18.8 g、肥母鸡汤约 13.1 g；红糖水 96.6% 是蔗糖；醪糟煮沸 1 小时仍残留约 25% 酒精；13 种常用月子药材被国家公告明示哺乳期不推荐。然而，月子文化是华人家庭根深蒂固的代际照护仪式——代际照护者端出的那碗汤承载的不是营养成分表，而是「我在照顾你」的情感表达。西方方案直接照搬水土不服；全盘照收则违反营养学与法规。</p>
+    <p><b>三、产品路径以「求同存异」为核心：承接已深入骨髓的中式饮食认知，以现代食品工艺降低脂肪、提升蛋白。</b>保留鱼汤、鸡汤、红枣桂圆、燕窝、小米粥——长辈认得的每一味全部保留；改造工艺——瘦肉炖汤为底，用燕窝胶质与银耳多糖（可溶性膳食纤维）的「糯」替代脂肪乳化的「浓稠」，选料替撇油（乌鸡替老母鸡，原料脂肪实测降 91%），滚制替油煎，固体上盅连肉带汤，低糖控量。功效一个字不由品牌说出，民间认知由消费者自己携带。</p>
+    <p><b>四、由此推出三系列 13+1 款 SKU，以「出院后 0–12 个月月子标准餐」填补市场空位。</b>暖盏（热食炖盅 5 款）＋轻杯（冷食营养杯 4 款＋1 候选）＋每日水（4 款），按月里盒/随身盒/轻身盒三期订阅交付，价格带 2000–2600 元/月——对标鲜炖燕窝月套餐的价格段，交付完整加餐结构而非一盏。赛道空位真实：月子中心管 28 天院内（渗透率 5.5%），鲜炖燕窝管礼品与单品类，出院后 0–12 个月的家庭餐桌没有标准化品牌。</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat"><div class="v">13＋1</div><div class="k">款 SKU：暖盏 5＋轻杯 4＋候选 1＋每日水 4</div></div>
+    <div class="stat"><div class="v">0–12 月</div><div class="k">产后三期全覆盖；三期订阅盒 375/340/314 kcal</div></div>
+    <div class="stat"><div class="v">32%</div><div class="k">哺乳期贫血率；70.6% 维 D 不足；8.1% 钙达标</div></div>
+    <div class="stat"><div class="v">91%</div><div class="k">选料层脂肪降幅（乌鸡对老母鸡，实测）；成品 58%–88% 推算</div></div>
+  </div>
+</section>
+
+
+
+<!-- 01 产品思路总览 -->
+<section class="chapter" id="ch1">
+  <h2><span class="num">01</span>产品思路总览：从六大矛盾到三条产品线</h2>
+  <p class="chapter-lead">在进入学术细节之前，本章用一页纸把全貌摊开：我们面对什么问题、用什么策略应对、以什么产品落地。</p>
+
+  <ol class="strategy-tags" style="list-style:none;padding:0;margin:22px 0;display:grid;grid-template-columns:1fr;gap:10px">
+    <li><b>① 补缺补漏</b> — 针对热量（+400–500 kcal/d）、蛋白（RNI 80 g/d，训练上浮至 1.6–2.0 g/kg/d）、铁（24 mg/d，缺口覆盖：32% 贫血率）、叶酸（550 μg DFE/d，87.5% 未达推荐）、钙（1000 mg/d，仅 8.1% 达标）、维 D（10 μg/d，70.6% 不足）的系统性缺乏，三款产品分别承担：暖盏补能量＋蛋白（鱼盅蛋白 22–25 g/盅、牛腱盅铁 3.9 mg/盅），轻杯补纤维＋钙（白燕轻乳 251 mg 钙＋12.9 g 蛋白/杯），每日水补膳食纤维（西梅纤纤饮 ≥6 g 纤维/瓶）。</li>
+    <li><b>② 求同存异</b> — 西方营养学与中式月子饮食之间并非不可调和。东方文化的口感、仪式感与食材认知（鱼汤、鸡汤、红枣桂圆、燕窝、小米粥）全部保留；西方营养学要求的蛋白、铁、钙、维 D、叶酸等营养成分通过选料替换与工艺改造补充——形式承接、实质升级。</li>
+    <li><b>③ 密度转换</b> — 从传统月子饮食「热量密度高、营养密度低」（一碗猪脚汤脂肪 ≈18.8 g、蛋白仅 ≈3 g）转向「营养密度高、热量密度低」——同一碗汤的形态，蛋白翻倍、脂肪降至个位数。</li>
+    <li><b>④ 食安为上</b> — 全链有机认证，从原料基地到成品出库全程可追溯；执行标准不低于 GB 2762 污染物限量与 GB 29921 致病菌限量最高等级要求。</li>
+    <li><b>⑤ 去芜存菁</b> — 对传统饮食文化中因烹饪手段或调配不当导致的高脂高热量部分，直接进行营养成分调换：用燕窝与银耳的「糯」替代脂肪乳化产生的「醇厚」口感。选料层：乌鸡替老母鸡，原料脂肪实测降 91%；猪蹄替牛腱，降 ≈88%。工艺层：滚制乳化替代油煎，成品脂肪降幅 80%–90% 以上，热量大幅降低，口感保留。</li>
+    <li><b>⑥ 以食养心</b> — 针对产后抑郁/焦虑（检出率 14.8%–28.4%），以充足营养素支持身体：维 D、铁、B12、叶酸、DHA 与情绪呈显著负相关（Nutrients 2025 系统综述，58 项研究）；产品以均衡营养配方为基底，结合风味设计唤起「被照顾」的感受。</li>
+    <li><b>⑦ 慢养生活</b> — 产后康复不止月子 28 天，而是整一周年（D1–D365），甚至可向前延伸至孕前与孕期。三期订阅盒（月里盒/随身盒/轻身盒）按月子里、返工期、体重管理期分阶段交付，覆盖泌乳启动→盆底恢复→体重管理全链路。</li>
+  </ol>
+
+  <h3>1.1 六大矛盾：产后营养的现实困境</h3>
+
+  <div class="table-scroll">
+    <table>
+      <caption>产后营养六大矛盾</caption>
+      <thead><tr><th scope="col">#</th><th scope="col">矛盾</th><th scope="col">核心事实</th></tr></thead>
+      <tbody>
+        <tr><td><b>① 营养量的缺失</b></td><td>产后基础需求（+400–500 kcal/d、蛋白 80 g/d、铁/叶酸/钙/维 D 全面不足）叠加力量训练额外需求（蛋白 1.6–2.0 g/kg/d、+150–300 kcal/d），产妇无法每日精确计算，缺口长期被忽视。</td><td>钙达标率仅 8.1%、叶酸不足 87.5%、维 D 不足 70.6%、贫血率 32%</td></tr>
+        <tr><td><b>② 传统月子汤高热量密度、低营养密度</b></td><td>传统汤品靠脂肪乳化获得「浓稠」口感——一碗猪脚汤脂肪约 18.8 g、肥母鸡汤约 13.1 g，蛋白质却大部分留在肉里没有溶出（煲汤蛋白溶出率仅 7.8%–23.0%）。文化认可度高（§3.7），但营养结构呈现「热量密度过高、营养密度过低」的特征。</td><td>汤蛋白最多 3.18 g/200 mL；脂肪乳化＝高脂低蛋白</td></tr>
+        <tr><td><b>③ 食材安全问题</b></td><td>散户采购无认证，农药、抗生素残留风险不可控。孕妇和产妇对食品安全的要求理应最高，但供应链端无系统性保障。</td><td>供应链不可追溯、无有机认证覆盖</td></tr>
+        <tr><td><b>④ 照护人员营养知识缺失</b></td><td>月嫂/家属缺乏系统营养学训练，烹饪决策依赖地方习俗与经验：重油重盐或极端无盐、长时间炖煮、只汤弃肉（蛋白溶出率仅 7.8%–23.0%，蛋白损失 &gt;77%）。13 种哺乳期不推荐药材仍凭经验使用。</td><td>蛋白损失 &gt;77%；久炖破坏热敏营养素；禁忌药材使用风险</td></tr>
+        <tr><td><b>⑤ 产后抑郁/焦虑</b></td><td>产后抑郁/焦虑症状检出率 14.8%–28.4%（中国多源数据，§3.3）。维 D、铁、叶酸、B12、DHA 与产后情绪呈显著负相关（Nutrients 2025 系统综述，58 项研究）。产品需以均衡营养配方为基底，同时兼顾风味设计对情绪的正向支持。</td><td>EPDS 阳性率 15%–28%；农村 32%；焦虑 18%</td></tr>
+        <tr><td><b>⑥ 文化传承与市场空白</b></td><td>月子餐只关注第一个月，但产后修复至少 1 年左右。后面的 11 个月市场无人覆盖。国际机构建议产后关怀至少持续 6 个月（WHO/ACOG），中国每年约 792 万产妇在 D29–D365 处于品牌化营养服务的真空地带。</td><td>产后 D29–D365 市场真空；国际建议 ≥6 个月</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <h3>1.3 问题 → 策略 → 产品 总对照表</h3>
+
+  <div class="table-scroll">
+    <table>
+      <caption>六大矛盾 × 应对策略 × 产品线对应</caption>
+      <thead><tr><th scope="col">问题 / 矛盾</th><th scope="col">应对策略与具体措施</th><th scope="col">对应产品线</th></tr></thead>
+      <tbody>
+        <tr><td>① 营养量的缺失<br><small>（§3.1）</small></td><td><b>补缺补漏</b>：暖盏——鱼盅蛋白 22–25 g/盅、牛腱盅铁 3.9 mg/盅、金粱羹能量密度补充；轻杯——白燕轻乳钙 251 mg＋蛋白 12.9 g/杯；每日水——西梅纤纤饮纤维 ≥6 g/瓶。目标覆盖：蛋白 80 g/d（训练期 96–120 g/d）、铁 24 mg/d、钙 1000 mg/d、叶酸 550 μg DFE/d。</td><td>暖盏（能量＋蛋白＋铁）＋轻杯（钙＋纤维＋微量营养素）＋每日水（纤维＋补水）</td></tr>
+        <tr><td>② 传统浓汤高热量密度、低营养密度<br><small>（§3.7）</small></td><td><b>求同存异＋密度转换</b>：形态保留、营养结构替换。选料——乌鸡替老母鸡（原料脂肪实测降 91%）、牛腱替猪蹄（降 ≈88%）；工艺——滚制乳化替油煎（成品脂肪降 80%–90%）、燕窝/银耳多糖替代脂肪乳化提供「糯」感。成品：脂肪降至个位数 g/盅，蛋白 22–25 g/盅。</td><td>暖盏全线</td></tr>
+        <tr><td>③ 食材安全<br><small>（§3.6 关联）</small></td><td><b>食安为上</b>：全链有机认证，从原料基地到成品全程可追溯；执行 GB 2762 污染物限量、GB 29921 致病菌限量最高等级；13 种哺乳期不推荐药材零进入（详见第 14 章合规矩阵）。</td><td>全线供应链</td></tr>
+        <tr><td>④ 照护人员营养知识缺失<br><small>（§3.6）</small></td><td><b>去芜存菁</b>：标准化工艺直接交付，无需照护人员具备营养学知识。固体上盅连肉带汤（解决「喝汤弃肉」蛋白损失 &gt;77% 的问题）；盐按 DRIs 标准控量；每盅营养含量标注清晰，月嫂/家人只需加热即可。</td><td>暖盏（标准化热食炖盅）</td></tr>
+        <tr><td>⑤ 产后抑郁/焦虑<br><small>（§3.3）</small></td><td><b>以食养心</b>：以充足营养素支持情绪稳态——维 D、铁、叶酸、B12、DHA 与产后情绪负相关（58 项研究系统综述）。产品层面：风味设计保留传统月子味觉记忆（红枣、桂圆、黑芝麻），低糖配方（单盅糖 ≤10 g），甜盅提供自我关怀时刻。</td><td>全线（风味设计＋轻杯冷食仪式感＋每日水日常陪伴）</td></tr>
+        <tr><td>⑥ 文化传承与市场空白<br><small>（§3.5）</small></td><td><b>慢养生活</b>：产后康复覆盖 D1–D365（一整年），可延伸至孕前/孕期。三期订阅——月里盒（D1–D28，泌乳启动期，热食为主）→ 随身盒（D29–D120，返工期，冷食便携）→ 轻身盒（D121–D365，体重管理期，低脂高蛋白）。国际建议产后关怀 ≥6 个月（WHO/ACOG），市场品牌化服务 D29 后空白。</td><td>三期订阅平台</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+<section class="chapter" id="ch2">
+  <h2><span class="num">02</span>研究范围、方法与证据等级</h2>
+  <p class="chapter-lead">本报告覆盖产后 0–12 个月（以哺乳期为主）的营养需求、饮食文化与食品安全现实，落到三系列 SKU 定义、三期订阅、合规与上市路径。产品与战略内容以内部 v5 战略策划为最新蓝本；营养素与生理学数字仅取自规范文件与已核实研究；SKU 数字为按投料量测算的配方框架值，投产前以打样送检校准。</p>
+  <div class="table-scroll">
+    <table>
+      <caption>证据来源分级与用途</caption>
+      <thead><tr><th scope="col">层级</th><th scope="col">优先来源</th><th scope="col">在本报告中的用途</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ev a">A</span> 规范性证据</td><td>《中国孕妇、乳母膳食指南（2022）》、T/CNSS 014—2022、DRIs 2023、GB 31601、GB 28050、GB 14880、《食品安全法》、卫健委与市场监管总局公告、WHO/FDA 等权威机构</td><td>定义推荐量、标签与声称边界、配方红线</td></tr>
+        <tr><td><span class="ev b">B</span> 人群与实测研究</td><td>13 省 954 名乳母膳食调查、三城市 495 名乳母贫血队列、国家级乳母维 D 监测（1981 人）、陆路等中华传统煲汤营养成分实测、《中国食物成分表》第 6 版、宋咏烨等燕窝成分综述、产后体重滞留与情绪系统综述</td><td>支撑缺口规模、浓汤脂肪与蛋白溶出、工艺改造方向</td></tr>
+        <tr><td><span class="ev c">C</span> 市场与文化证据</td><td>弗若斯特沙利文、艾媒咨询、魔镜 CMI、未来智库等行业报告与媒体监测；月子习俗观察</td><td>判断市场结构、量级与消费者语言，不作营养事实依据</td></tr>
+        <tr><td><span class="ev d">D</span> 探索性证据</td><td>燕窝唾液酸动物实验与体外研究、机制假说</td><td>仅作研发假设与文化背景，不转译为人体功效声称</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout rule">
+    <span class="ct">数字纪律</span>
+    <p>规范文件与研究中可查的数字直接引用并标注来源；SKU 数字一律标注「配方框架估算，以打样送检为准」，宣传值不得早于实测；素材中没有的数字不写或列入附录 B 待补，不以推算冒充实测。家常浓汤基准碗脂肪为按食材成分推算的对照基准，任何对外比较声称前必须以第三方基准样品检测校准。市场类（C 级）数字不同口径存在差异，仅用于量级与趋势判断。</p>
+  </div>
+  <div class="callout warn">
+    <span class="ct">证据表达四层边界</span>
+    <p>「食材含某成分」≠「吃了对人体有效」；「观察性相关」≠「因果与治疗」；「动物实验有效」≠「人体有效」；「人体有效」也不自动等于「可在中国普通食品标签上声称」。四层边界在第 6、12 章逐条落地。</p>
+  </div>
+</section>
+<!-- 03 产后营养修复紧迫性 -->
+<section class="chapter" id="ch3">
+  <h2><span class="num">03</span>产后营养修复的研究现状与紧迫性</h2>
+  <p class="chapter-lead">产后不是「休养」，是修复窗口期。中国每年近 800 万产妇同时面对多重压力：泌乳带来的刚性营养消耗、产后情绪障碍的高发、力量训练趋势叠加的额外营养需求、照护人员营养知识缺失、以及传统月子饮食高热量密度低营养密度的结构性问题。以下数据全部标注来源。</p>
+
+  <h3 class="block">3.1 中国产后营养缺口：流行病学全景</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>产后/哺乳期关键营养素缺口（中国人群数据）</caption>
+      <thead><tr><th scope="col">营养素</th><th scope="col">乳母推荐量</th><th scope="col">中国人群现状</th><th scope="col">来源</th></tr></thead>
+      <tbody>
+        <tr><td>能量</td><td>+400 kcal/d（0–6 月）</td><td>83.8% 乳母能量低于 EER，但脂肪供能比达 38%：<b>总量不足与结构过剩并存</b></td><td><span class="ev b">B</span> 13 省 954 名乳母调查（PMC7362564）</td></tr>
+        <tr><td>蛋白质</td><td>RNI <b>80 g/d</b>（+25 g）</td><td>月子期蛋白普遍超标（超 RNI 31%–53%），但返工后断崖下降；补剂使用率由 82% 跌至 47.8%</td><td><span class="ev a">A</span> DRIs 2023；<span class="ev b">B</span> Chen 2012</td></tr>
+        <tr><td>钙</td><td>1000 mg/d（指南/团标口径）</td><td>中位 <b>412.6 mg/d</b>，84.8% 低于 EAR，<b>仅 8.1% 达 RNI</b>；月子期牛奶食用频率仅 23.5%</td><td><span class="ev b">B</span> 13 省调查</td></tr>
+        <tr><td>维生素 D</td><td>10 μg/d（400 IU）</td><td>1981 名乳母：缺乏 25.2%＋不足 45.4%，<b>合计 70.6% 未达充足</b></td><td><span class="ev b">B</span> 中华预防医学杂志 2016</td></tr>
+        <tr><td>铁</td><td>RNI <b>24 mg/d</b>（+6）</td><td>哺乳期贫血 <b>32.0%</b>，产后 1–2 月达峰 35.2%；膳食铁中位 18.46 mg/d、48.3% 低于 EAR</td><td><span class="ev b">B</span> Zhao 2019 三城市 495 人队列</td></tr>
+        <tr><td>碘</td><td><b>240 μg/d</b>（约翻倍）</td><td>膳食碘中位仅 33.1 μg/d（不含碘盐）；约 30% 孕乳妇低于 WHO 200 μg/d</td><td><span class="ev b">B</span> 13 省调查</td></tr>
+        <tr><td>DHA</td><td>≥200 mg/d</td><td>育龄妇女海水鱼人均消费仅 <b>14.77 g/d</b>；乳母 DHA 专项摄入数据国内空白</td><td><span class="ev b">B</span> CFSA 2021</td></tr>
+        <tr><td>叶酸</td><td>550 μg DFE/d</td><td>4 城市母乳母婴研究：<b>87.5%</b> 乳母叶酸未达推荐</td><td><span class="ev b">B</span> 中国食物与营养 2024</td></tr>
+        <tr><td>胆碱</td><td>520 mg/d</td><td>中国成人胆碱仅 <b>3.7% 达 AI</b>；乳母专项调查留白</td><td><span class="ev b">B</span> Br J Nutr 2025</td></tr>
+        <tr><td>膳食纤维</td><td>25–30 g/d</td><td>乳母不溶性纤维中位 <b>8.47 g/d，仅 2.0% 达 AI</b></td><td><span class="ev b">B</span> 13 省调查</td></tr>
+        <tr><td>水分</td><td>总液体 +500–1000 mL/d</td><td>乳汁 87%–90% 为水；明显脱水经皮质醇升高干扰喷乳反射</td><td><span class="ev a">A</span> T/CNSS 014</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>上述数字共同指向一个事实：中国哺乳期女性的营养缺口不是「某种营养素不足」，而是<b>系统性的多维缺乏</b>——钙、维 D、铁、碘、叶酸、胆碱、纤维全面低于推荐，同时脂肪供能比过高。传统浓汤的烹饪方式无法弥合这一缺口——汤品贡献了过多的脂肪与嘌呤，而蛋白与微量营养素大部分保留在肉中。</p>
+
+  <h3 class="block">3.2 产后体重滞留（PPWR）：长期慢性病风险的入口</h3>
+  <p>约 <b>75%</b> 女性产后 1 年未恢复孕前体重、<b>25%</b> 滞留 ≥5 kg，12 个月平均滞留 3.3 kg（Obesity Reviews 2024，PMC6888503，<span class="ev b">B</span>）。中国居民营养与健康状况监测显示，女性孕期体重增长平均达 14 kg，41% 超过推荐范围；产后 1–2 年较孕前平均重 3 kg，39% 的女性在产后两年体重滞留超过 5 kg（<span class="ev b">B</span> 赖建强，全国营养科普大会）。孕期增重过多者产后 2–4 年仍多滞留 2.89 kg，以中心性脂肪为主。</p>
+  <p>产后体重滞留不仅是美观问题——它是成年女性持续性肥胖的关键诱因，显著增加 2 型糖尿病、心血管疾病与特定癌症的长期风险。约 <b>60%</b> 产后女性出现不同程度体重滞留，其中 30% 发展为产后肥胖（<span class="ev c">C</span> 中国妇幼健康事业报告）。</p>
+
+  <h3 class="block">3.3 产后抑郁与焦虑：被忽视的流行病</h3>
+  <p>产后抑郁并非个人意志问题，而是产后最常见的心理障碍，具有明确的流行病学规模与营养关联。</p>
+  <div class="table-scroll">
+    <table>
+      <caption>产后抑郁/焦虑流行病学（中国及全球数据）</caption>
+      <thead><tr><th scope="col">指标</th><th scope="col">数值</th><th scope="col">来源</th></tr></thead>
+      <tbody>
+        <tr><td>全球产后抑郁合并患病率</td><td><b>17.2%</b>（565 项研究、80 国荟萃）；另一 meta 报告 17.7%（291 项研究、296,284 人）</td><td>Gelaye 2016（JAD）；<span class="ev b">B</span></td></tr>
+        <tr><td>中国产后抑郁检出率</td><td><b>14.8%–21.4%</b>（EPDS 筛查）；2019 年 meta 分析 17 省 24 项研究 38,357 人：总体 15%（95%CI 12–17%）</td><td>2019 meta（<span class="ev b">B</span>）；Nature SSR 2026 武汉队列（16.0%）</td></tr>
+        <tr><td>中国 2025 蓝皮书数据</td><td>产后抑郁发生率维持 <b>14.8%</b>，中度及以上占 41.2%；产后 3 个月新发占总病例 34.6%</td><td>国家卫健委《中国孕产妇心理健康状况蓝皮书》2025（<span class="ev b">B</span>）</td></tr>
+        <tr><td>中国 SDI 自评量表数据</td><td>产后 12 个月内抑郁症状总检出率 <b>28.42%</b>（971 样本），中重度 9.99%</td><td>广东医科大学 2025 厦门调查（<span class="ev b">B</span>）</td></tr>
+        <tr><td>产后焦虑检出率</td><td>中国产后 12 个月焦虑症状检出率 <b>18.02%</b>（971 样本）；高收入国家 4.7%–33%</td><td>广东医科大学 2025（<span class="ev b">B</span>）</td></tr>
+        <tr><td>农村地区</td><td>中国农村产后抑郁率升至 <b>32.0%</b>（医疗资源不足与文化障碍）</td><td>PRRM 2026 湖北农村 IPT 试验（<span class="ev b">B</span>）</td></tr>
+        <tr><td>发病时间</td><td>平均产后 14 周、高峰 2–3 个月；产后 1 年内均可发生</td><td>多项研究一致</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h4 class="sub">产后情绪与营养素的关联证据</h4>
+  <p>2025 年系统综述（Nutrients，58 项研究，PMC12610701，<span class="ev b">B</span>）中 31/58 项报告围产期抑郁与维 D、铁、B12、叶酸、锌中至少一种呈显著负相关。各营养素证据如下：</p>
+  <ul class="bullets">
+    <li><b>维生素 D</b>（证据相对最强但仍为相关性）：Wang 2018 meta（9 项纵向研究 8470 人）25(OH)D <50 nmol/L 与 PPD 风险升高相关（<span class="ev b">B</span>）。但近半研究未见显著关联；一项 RCT 显示孕 26–28 周起补 2000 IU/d 维 D3 降低抑郁评分——干预性证据有限。</li>
+    <li><b>n-3/DHA</b>：观察性研究中低 omega-3 指数与产后抑郁症状相关；多项 meta 显示对已确诊情绪障碍者症状改善较一致、对一般人群效应有限。哺乳期每日经乳汁输出 DHA 约 70–100 mg（<span class="ev b">B</span>）。</li>
+    <li><b>铁</b>：缺铁性贫血患者抑郁、焦虑、睡眠障碍发生率显著高于对照（Lee 2020 等）；低铁蛋白与抑郁症状相关；但「补铁治疗产后抑郁」无 RCT 支持（<span class="ev b">B</span>）。</li>
+    <li><b>B 族（B12、叶酸）</b>：参与神经递质合成；部分病例对照研究发现 PPD 组叶酸低，但结果不一致（<span class="ev b">B</span>）。</li>
+    <li><b>肠道菌群</b>：Cell 2025 研究显示补充罗伊氏乳杆菌 DSM17938 可降低 41% 产后抑郁风险（<span class="ev b">B</span>，待更多研究验证）。</li>
+  </ul>
+  <div class="callout warn">
+    <span class="ct">证据表达纪律</span>
+    <p>上述营养素与产后情绪的关系<b>全部为观察性相关，非因果与治疗</b>。营养缺乏是产后情绪障碍的可能调节因素之一；PPD 的一线干预是筛查（EPDS）、心理治疗（CBT/IPT/正念）、社会支持与必要时精神科转诊。产品可以做「保证均衡营养＋情绪筛查入口＋就医引导」，<b>不得做「吃 XX 预防/缓解产后抑郁」的功效表达</b>（禁用词见第 14 章）。</p>
+  </div>
+
+  <h3 class="block">3.4 产后力量训练的额外营养需求</h3>
+  <p>产后运动不再是「躺着休息」的传统叙事。ACOG Committee Opinion 804（2020，<span class="ev a">A</span>）与 2025 年产后运动国际指南（BMJ 2025，574 项研究，<span class="ev a">A</span>）明确推荐：无并发症产妇<b>产后前 3 个月每周至少 120 分钟中至剧烈强度活动</b>（快走、骑车、肌肉强化），最好分 ≥4 天，每日盆底肌训练。BJOG 2024 产后运动共识与 Physical Therapy in Sport 2025 进一步确认抗阻训练对盆底功能恢复（1/3 产妇产后运动时尿失禁）、腹直肌分离修复与体态重塑的关键作用。</p>
+  <h4 class="sub">泌乳基础上的叠加营养需求</h4>
+  <div class="table-scroll">
+    <table>
+      <caption>哺乳期＋力量训练的营养需求叠加</caption>
+      <thead><tr><th scope="col">营养维度</th><th scope="col">单纯哺乳</th><th scope="col">哺乳＋力量训练</th><th scope="col">来源</th></tr></thead>
+      <tbody>
+        <tr><td>总能量</td><td>+330–500 kcal/d（泌乳净消耗）</td><td>在哺乳基础上<b>额外 +150–300 kcal/d</b>（取决于训练量与强度）</td><td><span class="ev a">A</span> DRIs 2023；<span class="ev b">B</span> 运动营养学共识 PMID 28698222</td></tr>
+        <tr><td>蛋白质</td><td>RNI 80 g/d（+25 g）</td><td><b>1.6–2.0 g/kg/d</b>（保肌＋修复）；以 60 kg 计约 96–120 g/d，较单纯哺乳 +16–40 g</td><td><span class="ev b">B</span> PMID 28698222；运动营养学会立场</td></tr>
+        <tr><td>蛋白分配</td><td>未特别强调</td><td>每餐 0.3–0.4 g/kg（约 18–24 g/餐），每日 3–4 餐均匀分布</td><td><span class="ev b">B</span> PMID 22150425</td></tr>
+        <tr><td>铁</td><td>24 mg/d</td><td>维持 24 mg/d；训练引起的炎症与溶血可能进一步增加需求</td><td><span class="ev a">A</span> DRIs 2023</td></tr>
+        <tr><td>钙/维 D</td><td>1000 mg / 10 μg</td><td>维持；哺乳期骨密度暂时下降，抗阻训练刺激骨重建，充足钙/维 D 为骨恢复基础</td><td><span class="ev a">A</span> 指南</td></tr>
+        <tr><td>水分</td><td>+500–1000 mL/d</td><td>额外训练需 +300–500 mL/d；训练前中后分次补水</td><td><span class="ev a">A</span> 运动医学共识</td></tr>
+        <tr><td>B 族维生素</td><td>常规乳母推荐</td><td>B1、B2、B6 参与能量代谢，训练负荷增加时需求上升</td><td><span class="ev a">A</span> DRIs</td></tr>
+        <tr><td>镁/锌</td><td>常规推荐</td><td>参与肌肉收缩与蛋白合成，训练后恢复需求增加</td><td><span class="ev b">B</span> 运动营养综述</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout teal">
+    <span class="ct">对产品设计的意义</span>
+    <p>产后力量训练趋势意味着<b>蛋白需求不再只是哺乳的 80 g/d，而是可能上浮至 1.6–2.0 g/kg/d（约 96–120 g/d）</b>，叠加泌乳的 +400 kcal 基础。这为暖盏线「固体上盅、连肉带汤 80–100 g」与轻杯线「蛋白 12.9 g/杯」的产品设计提供了更强支撑——每一盅/每一杯都在填补训练＋哺乳的双重缺口。但需注意：哺乳期安全热量地板仍为 <b>1800 kcal/d</b>，减重不超过 0.5 kg/周（产后 6–8 周后方可启动）；不建议长时窗断食。</p>
+  </div>
+
+  <h3 class="block">3.5 产后恢复时间线与高发缺口（三期框架）</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>产后三期：生理事件、高发缺口与产品任务</caption>
+      <thead><tr><th scope="col">阶段</th><th scope="col">身体状况</th><th scope="col">高发缺口</th><th scope="col">产品任务</th></tr></thead>
+      <tbody>
+        <tr><td><b>D1</b> 0–3 月<br>泌乳启动期</td><td>恶露约 6 周净、子宫复旧约 8 周；分娩失血集中消耗铁储备；夜醒 2–3 次常态；<b>禁主动减重</b></td><td><b>铁为第一缺口</b>（贫血 32%、1–2 月峰 35.2%）；奶/蔬果被禁忌压制（牛奶频率 23.5%）；纤维仅 8.2 g/d；浓汤脂肪过剩</td><td>热食为主（月里盒）：红肉承担铁、豆腐与奶承担钙</td></tr>
+        <tr><td><b>D2</b> 3–6 月<br>恢复返工期</td><td>盆底显著恢复窗口 3–6 月；产假约 158 天，5–6 月返工；开始力量训练</td><td><b>饮食质量塌方</b>：凑活吃饭、外卖上升；补剂率从 82% 跌至 47.8%，铁补充率 1.45%；蛋白需求因训练上浮</td><td>冷食为主（随身盒）：便携蛋白与钙</td></tr>
+        <tr><td><b>D3</b> 6–12 月<br>体重管理期</td><td>孕期脂肪储备约 6 月耗尽；75% 未恢复孕前体重；月经恢复</td><td>体重管理主线；铁/钙/维 D 不能随奶量下降停；训练＋哺乳双重蛋白需求持续</td><td>低脂高蛋白（轻身盒）：蛋白 80+ g/d 保瘦体重</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">3.6 照护人员营养知识缺失</h3>
+  <p>月子期间负责烹饪与配餐的人员——月嫂、家属、月子中心厨师——普遍缺乏系统的营养学训练。其烹饪决策主要依赖地方月子习俗与个人经验，而非膳食指南或循证营养学。这一知识断层直接导致以下问题：</p>
+  <ul class="bullets">
+    <li><b>重油重盐或极端无盐</b>：部分家庭认为月子期需要大量进补，烹饪中大量使用油脂与调味料；另一些家庭走向极端——完全不加盐，导致产妇钠摄入不足、电解质失衡。</li>
+    <li><b>喝汤弃肉</b>：照护者普遍认为营养集中在汤中，将汤端给产妇、肉留置不用。实际煲汤蛋白溶出率仅 7.8%–23.0%，200 mL 汤最多含蛋白 3.18 g，而肉中蛋白 20.9 g/100 g。这一习惯导致产妇蛋白损失 &gt;77%。</li>
+    <li><b>久炖不控时</b>：认为炖煮时间越长营养价值越高。实际长时间高温炖煮破坏部分热敏营养素（叶酸、维生素 B1、维生素 C），并增加嘌呤溶出。</li>
+    <li><b>不了解哺乳期禁忌食材</b>：13 种常用月子药材（含红花、藏红花、益母草等）被国家公告明示哺乳期不推荐，但照护者凭经验使用，存在安全隐患。</li>
+  </ul>
+  <p>月子餐的营养结构在很大程度上取决于照护者的知识水平——而这一水平目前没有系统性保障。产品化、标准化的月子餐方案（固体上盅连肉带汤、盐按 DRIs 标准控量、每盅营养含量标注清晰）可直接绕过这一知识断层，使照护者无需具备营养学训练即可交付合格月子餐。</p>
+
+  <h3 class="block">3.7 传统月子饮食叙事的高认可度及其营养后果</h3>
+  <p>产妇及家庭对传统月子饮食的文化认同度极高。奶白色的鱼汤、整只老母鸡炖汤、猪蹄黄豆汤、红糖鸡蛋——这些食物在月子场景中承载着「正经补品」的文化符号，其认可度来源于代际传承（长辈经验）、地方习俗与月子行业的沿袭。然而，高认可度并不等同于高营养价值。传统月子饮食的核心矛盾在于：<b>热量密度过高、营养密度过低</b>。</p>
+  <div class="table-scroll">
+    <table>
+      <caption>传统月子高认可度食物的营养结构</caption>
+      <thead><tr><th scope="col">食物</th><th scope="col">文化认可度</th><th scope="col">实际营养结构（每份）</th><th scope="col">核心问题</th></tr></thead>
+      <tbody>
+        <tr><td>猪脚汤</td><td>极高（视为催奶必备）</td><td>脂肪 ≈18.8 g/碗（280 g）；蛋白 ≈5.4 g（汤＋肉）</td><td>脂肪供能 &gt;60%，蛋白贡献极低</td></tr>
+        <tr><td>肥母鸡汤</td><td>极高（视为大补）</td><td>脂肪 ≈13.1 g/碗；蛋白 ≈6.5 g</td><td>脂肪乳化赋予「浓稠」口感＝高脂信号</td></tr>
+        <tr><td>红糖水</td><td>高（视为补血、排恶露）</td><td>96.6% 为蔗糖；铁 ≈2.5 mg/100 g（与动物血/红肉差距悬殊）</td><td>几乎纯糖；补血效果远不及红肉与动物血</td></tr>
+        <tr><td>油煎鲫鱼汤</td><td>高（视为下奶）</td><td>脂肪 ≈8.8 g/碗（油煎额外贡献脂肪）</td><td>油煎工序使脂肪含量倍增</td></tr>
+        <tr><td>醪糟（煮沸 1 h）</td><td>高（视为暖宫）</td><td>酒精残留 ≈25%；哺乳期酒精无安全阈值</td><td>酒精经乳汁传递，无安全剂量</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>上述食物的共同特征：高文化认可度、高脂肪/高糖、低蛋白利用率、低微量营养素密度。照护者与产妇在「口感醇厚＝营养好」的直觉驱动下持续消费，而这一认知恰恰是营养结构失衡的根源之一。产品设计的任务不是否定这些食物的文化价值，而是在保留形态与口感的前提下，将营养结构从「热量密度高、营养密度低」转换为「营养密度高、热量密度低」——即策略 ⑤「去芜存菁」与策略 ③「密度转换」的交叉地带。</p>
+
+</section>
+
+
+<!-- 04 中西冲突与承继哲学 -->
+<section class="chapter" id="ch4">
+  <h2><span class="num">04</span>中西冲突与承继哲学</h2>
+  <p class="chapter-lead">中国传统月子营养处方与现代循证营养学之间存在系统性冲突——但月子文化在华人家庭中根深蒂固，西方方案直接照搬水土不服。本章论述我们的路径：<b>求同存异</b>。</p>
+
+  <h3 class="block">4.1 系统性冲突：六组核心矛盾</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>中国传统月子饮食 vs 循证营养学的六组矛盾</caption>
+      <thead><tr><th scope="col">矛盾维度</th><th scope="col">中国传统月子做法</th><th scope="col">循证营养学/西方方案</th><th scope="col">冲突实质</th></tr></thead>
+      <tbody>
+        <tr><td><b>汤的浓度</b></td><td>浓白汤为上：猪脚汤、老母鸡汤、鲫鱼汤——奶白色=营养足，脂肪乳化=「精华」</td><td>泌乳由供需驱动、喝汤不增乳；浓汤高脂高嘌呤；建议撇油、选瘦肉鱼、连肉带汤</td><td>浓稠感的来源不同：传统靠脂肪乳化，循证靠蛋白与可溶性纤维</td></tr>
+        <tr><td><b>糖与甜味</b></td><td>红糖水当月子水；红枣桂圆甜汤；醪糟鸡蛋——「补血活血、暖宫」</td><td>红糖 96.6% 为蔗糖、铁为非血红素铁；醪糟含酒精，煮沸 1h 残留约 25%；久喝延长恶露、增加糖摄入</td><td>「红色=补血」的民间联想 vs 血红素铁与非血红素铁的本质区别</td></tr>
+        <tr><td><b>酒精使用</b></td><td>月子酒、醪糟、料酒去腥——「活血驱寒、下奶」</td><td>酒精自由通过血乳屏障、无安全阈值、抑制喷乳反射；AAP/ABM/LactMed 一致不推荐</td><td>「煮沸即挥发」是误解（USDA 实测 1h 残留 25%）；文化认知与毒理学完全对立</td></tr>
+        <tr><td><b>药材入膳</b></td><td>黄芪、党参、当归、四物汤、益母草等——「补气血、排恶露」</td><td>13 种被国家公告明示哺乳期不推荐；益母草可能经乳影响新生儿肝脏；中药功效无法通过普通食品声称</td><td>中医药食同源传统 vs 现代食品法规与哺乳期安全数据</td></tr>
+        <tr><td><b>盐与蔬果</b></td><td>月子忌盐、忌蔬果——「防水肿、防寒凉」</td><td>产后失钠多需正常盐量；蔬果不足增加便秘痔疮并降低乳汁维生素；指南要求蔬菜 400–500 g/d、水果 200–400 g/d</td><td>「清淡」被理解为「无盐」；「寒凉」被等同于所有生鲜蔬果</td></tr>
+        <tr><td><b>运动观念</b></td><td>「坐月子」=卧床静养、满月才出门——「动则伤身」</td><td>ACOG/BMJ 2025：无并发症产后数日即可步行、3 个月内 ≥120 min/周中高强度＋每日盆底训练；长期卧床致基础代谢下降 10%–15%</td><td>传统「静养」与现代「主动恢复」的哲学对立</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">4.2 为什么不能对立：月子文化的不可替代性</h3>
+  <p>上述矛盾如果只从营养学出发，结论很容易滑向「纠正愚昧」——但这恰恰是行业过去两种失败姿态中的一种（另一种是「全盘照收」）。月子文化不是「错误知识」，它是<b>华人家庭最深层的代际照护仪式</b>：</p>
+  <ul class="bullets">
+    <li><b>婆婆的那碗汤，不是营养成分表。</b>它是这一代母亲表达「我在照顾你」的主要方式。否定那碗汤，在婆婆看来是否定她作为母亲的价值。产品如果长得像对婆婆手艺的批评，就会被决策者否决。</li>
+    <li><b>月子餐的食用者与决策者常常分离。</b>决定产妇吃什么的往往是婆婆、妈妈或月嫂。她们不看营养成分表，看食材认不认得、汤色白不白、盅里有没有硬货。</li>
+    <li><b>礼赠场景承载社会关系。</b>燕窝在探病场景中的「体面」不是营销创造的——它是数百年华人社群里自然形成的礼遇符号。取消燕窝不会让产品更科学，只会让送礼人不知道买什么。</li>
+    <li><b>味道是记忆与归属。</b>红枣桂圆的甜、鸡汤的鲜、小米粥的糯——这些味道触发的是「被照顾」的自传体记忆。2025 年预注册研究显示食物怀旧可经社会连接感提高舒适感（<span class="ev b">B</span>）。</li>
+  </ul>
+  <p>西方方案——靠营养补充剂、靠称量每克食物、靠蛋白质粉冲水——在营养学上是对的，但在月子场景中是不可执行的。没有婆婆会接受「给产妇喝蛋白粉」，也没有月嫂会认同「不需要喝汤」。直接照搬西方方案，等于放弃了月子场景中最强的文化推动力。</p>
+
+  <h3 class="block">4.3 我们的路径：求同存异</h3>
+  <div class="callout gold">
+    <span class="ct">承继哲学</span>
+    <p><b>承接</b>已深入骨髓的中式认知——红豆、红枣、桂圆、鸡汤、鱼汤、瘦肉炖汤、小米粥、燕窝——全部保留。<b>改造</b>工艺与配比——高油高糖酒精换成高蛋白＋铁＋钙＋DHA＋控糖；脂肪乳化浓稠换成燕窝银耳糯感替代；药材功效换成药食同源食材的营养学重配比。<b>保留</b>仪式感、风味、记忆与亲人连接。<b>不说</b>功效——功效一个字不由品牌说出，民间认知由消费者自己携带。</p>
+  </div>
+  <p>落地到产品：传统月子食物的形态与食材全部保留——奶白鱼汤、乌鸡山药、红枣桂圆燕窝——照护者辨识无碍；营养结构在配方层面完成替换——脂肪降至个位数 g/盅、蛋白提升至 22–25 g/盅、配料表符合合规标准。<b>文化认同与营养目标在同一只盅内同步实现。</b></p>
+  <p>这条路径的壁垒在于：它<b>同时</b>通过了四道关卡——长辈认得（文化关）、产妇续购（口味与体重关）、合规可声称（法规关）、营养有实证（循证关）。任何单层竞争者——月子餐作坊（过不了合规关）、鲜炖燕窝（过不了营养关）、营养补充剂（过不了文化关）——都难以短期复制这个完整结构。</p>
+  <div class="conclusion"><p>中西之间不是非此即彼。我们的立场是：用中国食材、中国汤形、中国味型，承载 DRIs 2023 与膳食指南的营养结构。燕窝不是功效支点，是文化资产；瘦肉炖汤不是「补品」，是蛋白与铁的载体；银耳与燕窝的糯感不是卖点话术，是替代脂肪乳化的工艺路径。这套逻辑不需要教育消费者——它用消费者已经相信的东西，重新配比营养。</p></div>
+</section>
+
+
+<!-- 05 产后四大现实问题 -->
+<section class="chapter" id="ch5">
+  <h2><span class="num">05</span>产后四大现实问题与产品应对路径</h2>
+  <p class="chapter-lead">从「营养缺口」到「产品方案」，中间隔着四个具体的现实问题。每个问题直接映射到三条产品线的解决逻辑——让每个问题都有对应的产品方案。</p>
+
+  <h3 class="block">5.1 问题一：营养的「量」缺失</h3>
+  <div class="layer">
+    <div class="lc"><div class="lt">缺口本体</div><h4>热量与关键营养素的双重不足</h4><p>泌乳净消耗 +400 kcal/d，叠加力量训练额外 +150–300 kcal/d；蛋白需求从 80 g 上浮至 1.6–2.0 g/kg/d；铁 24 mg/d、钙 1000 mg/d、碘 240 μg/d、DHA 200 mg/d、叶酸 550 μg、胆碱 520 mg/d 全面上调——而中国乳母人群中钙仅 8.1% 达标、叶酸 87.5% 不足、维 D 70.6% 不足。</p></div>
+    <div class="lc"><div class="lt">为什么家庭解决不了</div><h4>不知道补多少、补什么</h4><p>月子膳食结构单一，奶（食用频率 23.5%）、海产品（人均 14.77 g/d）、蔬果、全谷普遍不足；补剂使用率由孕期 82% 跌至产后 6 月 47.8%；民间「大补」集中在脂肪与糖，微量营养素恰恰被忽视。</p></div>
+    <div class="lc"><div class="lt">产品应对</div><h4>三条线协同覆盖</h4><p><b>暖盏</b>：红肉承担铁（牛腱盅单份铁 3.9 mg），鱼盅承担 DHA 与蛋白（22–25 g/盅），金粱羹承担能量密度。<b>轻杯</b>：白燕轻乳一杯 251 mg 钙＋12.9 g 蛋白。<b>每日水</b>：西梅纤纤饮 ≥6 g 纤维/瓶，补纤维缺口。</p></div>
+  </div>
+
+  <h3 class="block">5.2 问题二：传统浓汤的营养结构失衡</h3>
+  <div class="layer">
+    <div class="lc"><div class="lt">缺口本体</div><h4>脂肪过高、营养密度过低、热量密度过高</h4><p>猪脚汤脂肪约 18.8 g/碗（280 g）、肥母鸡汤约 13.1 g/碗、油煎鲫鱼汤约 8.8 g/碗；蛋白质大部分留在肉里（汤仅 1.3 g/100 g vs 肉 20.9 g/100 g，汤为肉的约 1/16）；骨头汤钙仅 2–5 mg/100 g；红糖约 96.6% 为糖。浓汤主要贡献脂肪与嘌呤，蛋白与微量营养素贡献极低。</p></div>
+    <div class="lc"><div class="lt">为什么家庭解决不了</div><h4>撇油靠自觉、且撇不净</h4><p>家庭炖汤不撇油或撇不净；奶白色被误认为「精华」（实为脂肪乳化）；油煎鱼出白汤的传统做法额外增加 10–15 g 油脂；产后胃口差、食欲低，更依赖浓汤的「重口味」刺激。</p></div>
+    <div class="lc"><div class="lt">产品应对</div><h4>糯感替代浓稠＋五项现代工艺</h4><p><b>暖盏全线</b>：以燕窝胶质与银耳多糖（可溶性膳食纤维）的「糯」替代脂肪乳化的「浓稠」；滚制乳化替代油煎（鱼汤脂肪 0.3–0.6 g/100mL）；选料替撇油（乌鸡 23.4 vs 老母鸡 259.7 mg/g 原料脂肪）；固体上盅连肉带汤（蛋白 15–25 g/盅）；低糖控量制度化。成品盅脂肪 2.3–6.2 g，对基准碗降幅 58%–88%。</p></div>
+  </div>
+
+  <h3 class="block">5.3 问题三：食材安全问题</h3>
+  <div class="layer">
+    <div class="lc"><div class="lt">缺口本体</div><h4>家庭操作中的食安风险</h4><p>月嫂/长辈操作的食品安全风险：鲜黄花菜含秋水仙碱（需干制泡发焯透）；含醇配料残留酒精（USDA 实测炖 1h 残留 25%）；13 种公告红灯药材被民间常用（黄芪、党参、当归等）；燕窝过敏（IgE 介导，新加坡队列已识别）；高汞鱼误用；煲汤超 2 小时氨基酸破坏、嘌呤升高。</p></div>
+    <div class="lc"><div class="lt">为什么家庭解决不了</div><h4>知识盲区＋习惯惯性</h4><p>月嫂培训标准参差不齐；长辈凭经验操作，「醪糟下奶」「四物补气血」等民间认知根深蒂固；产妇在月子期话语权弱，难以纠正长辈做法；药食同源名单更新后，民间认知尚未同步。</p></div>
+    <div class="lc"><div class="lt">产品应对</div><h4>标准化生产＋合规红线体系</h4><p><b>全线</b>：标准化工厂生产、冷链配送；零含醇配料（去腥靠姜＋陈皮＋紫苏）；13 种红灯药材零进入；只用低汞鱼种；干金针菜泡发焯透 SOP 固定；燕窝强制过敏标注；进口燕窝凭 CAIQ 溯源。合规矩阵见第 14 章。</p></div>
+  </div>
+
+  <h3 class="block">5.4 问题四：烹饪问题——给产妇普及知识几乎不可能</h3>
+  <div class="layer">
+    <div class="lc"><div class="lt">缺口本体</div><h4>月嫂烹饪偏重油/重盐或完全无盐</h4><p>月嫂按地方习惯操作：南方月嫂可能完全无盐（错误：产后失钠需正常盐量），北方月嫂可能偏重油重盐；长辈炖汤靠手感，油盐糖量完全随机；产后产妇体力弱、话语权有限，「给月嫂/婆婆讲营养学」在实际场景中几乎不可执行。</p></div>
+    <div class="lc"><div class="lt">为什么教育不是答案</div><h4>代际权力结构＋时间紧迫</h4><p>产后 0–3 月产妇处于体力最弱、睡眠最少的阶段，不是学习营养学的时候；挑战婆婆/月嫂的烹饪权威可能引发家庭冲突；月嫂流动性高，每次培训效果归零。</p></div>
+    <div class="lc"><div class="lt">产品应对</div><h4><b>用产品替代教育</b></h4><p>「用产品是最好的解决方案」——不需要说服婆婆少放油，而是端上一盅已经撇好油的汤，婆婆一看食材都认得、汤色正常，自然接受。<b>产品是解决方案，不是教育工具。</b>暖盏热盅必须能端上家里餐桌、经得起床边点评；随箱营养卡片做指南食物量教育（鱼禽蛋瘦肉 220 g/d、奶 400–500 mL/d），不说教。</p></div>
+  </div>
+  <div class="callout teal">
+    <span class="ct">四大问题的产品总解</span>
+    <p>四个问题的共同答案是：<b>用标准化产品替代家庭随机供给</b>——营养缺口靠按 DRIs 配比的三条产品线；浓汤失衡靠「糯感替代浓稠」的五项工艺；食安风险靠工厂标准与合规红线；烹饪难题靠产品本身的可接受性（长辈认得、产妇续购）。这不是四套方案，而是一套产品结构的四个侧面。</p>
+  </div>
+</section>
+
+
+<!-- 06 全球产后营养机构对标 -->
+<section class="chapter" id="ch6">
+  <h2><span class="num">06</span>全球主要产后营养修复机构案例对标</h2>
+  <p class="chapter-lead">国际与国内机构在产后营养与恢复领域各自建立了标准与指南，但现有方案普遍存在盲区——它们要么只管医院端、要么只管营养补充剂、要么只管月子中心院内，没有人覆盖「出院后 0–12 个月的家庭餐桌」。</p>
+
+  <h3 class="block">6.1 国际机构</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>国际机构产后营养与恢复实践（2024–2026 最新口径）</caption>
+      <thead><tr><th scope="col">机构</th><th scope="col">核心指南/实践</th><th scope="col">标准要点</th><th scope="col">缺口</th></tr></thead>
+      <tbody>
+        <tr><td><b>WHO</b></td><td>母乳喂养指南（2022 更新）；产后营养建议</td><td>纯母乳 6 月、继续哺乳至 2 岁；乳母均衡膳食、充足水分、每日额外 +330–500 kcal；忌烟酒</td><td>不涉具体食品产品开发；不针对东亚月子文化场景</td></tr>
+        <tr><td><b>ACOG</b></td><td>Committee Opinion 804（产后体力活动，2020）；第四孕期概念</td><td>无并发症产后数日可步行；渐进式恢复运动；盆底训练贯穿全程；产后抑郁筛查</td><td>营养建议仅覆盖一般均衡膳食，不涉月子饮食文化</td></tr>
+        <tr><td><b>SOGC</b>（加拿大）</td><td>产后随访指南（2022）：从单次 6 周检查转为持续关怀模式</td><td>3 周内初次接触、12 周综合评估；血压、心理健康筛查（PHQ-9/GAD-7）、避孕、心血管风险</td><td>聚焦临床随访，不涉食品供给方案</td></tr>
+        <tr><td><b>La Leche League</b></td><td>母乳喂养支持国际组织</td><td>奶量第一驱动是供需（频繁有效排空）、非特定食物；均衡膳食为主、不靠「下奶汤」；酒精/咖啡因限量指导</td><td>志愿者驱动，无标准化食品供给</td></tr>
+        <tr><td><b>UNICEF BFHI</b></td><td>爱婴医院倡议</td><td>产后 1 小时内早接触早开奶；纯母乳 6 月；不推荐奶瓶与安慰剂</td><td>聚焦院内前 6 周，不涉及产后 6–12 月营养补充</td></tr>
+        <tr><td><b>EFSA/IOM</b></td><td>膳食营养素参考值</td><td>乳母蛋白 +12.5–16 g/d（各机构口径不同）；钙 860–1000 mg/d；DHA 约 200 mg/d</td><td>仅提供数值标准，不涉食品形态与文化落地</td></tr>
+        <tr><td><b>BMJ 2025 产后运动指南</b></td><td>分析 574 项研究的国际共识</td><td>产后前 3 月 ≥120 min/周中高强度＋每日盆底训练；个性化循序渐进</td><td>不涉及产后营养补充方案</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">6.2 中国机构与实践</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>中国产后营养相关机构与行业实践</caption>
+      <thead><tr><th scope="col">机构/实践</th><th scope="col">核心内容</th><th scope="col">标准与口径</th><th scope="col">缺口</th></tr></thead>
+      <tbody>
+        <tr><td><b>卫健委</b>《中国孕妇、乳母膳食指南（2022）》</td><td>哺乳期五条核心推荐；鱼禽蛋瘦肉 220 g/d、奶 400–500 mL/d；忌烟酒、避免浓茶咖啡；「喝汤饮水不增乳」「不宜喝多油浓汤」</td><td><span class="ev a">A</span> 国家指南</td><td>指南层级高但落地弱：没有食品产品形态承载、没有订阅配送方案</td></tr>
+        <tr><td><b>T/CNSS 014—2022</b></td><td>产褥期膳食指导团体标准：月子膳食兼具营养支持与文化习俗、心理照护属性；食物多样不过量</td><td><span class="ev a">A</span> 团标</td><td>是标准框架，不是食品产品</td></tr>
+        <tr><td><b>T/CAS 823—2024</b></td><td>产后营养膳食服务规范（2024 年 7 月实施）</td><td><span class="ev a">A</span> 团标</td><td>首次为月子餐服务建立标准——标准建立期即品牌建立期</td></tr>
+        <tr><td><b>中华预防医学会</b>妇女保健分会</td><td>产后康复指南；盆底肌训练标准方案</td><td>盆底训练每日 3 组 ×8–12 次、疗程 ≥12 周</td><td>聚焦运动康复，不涉及营养食品供给</td></tr>
+        <tr><td><b>主流月子中心</b><br>（圣贝拉、禧月阁等）</td><td>28 天院内全托管：餐食＋护理＋住宿；单客 4–22 万元</td><td>标准化配餐、专业营养师；渗透率 5.5%、市场规模约 300 亿</td><td>只管 28 天院内、出院即断档；价格门槛高（94.5% 家庭无法入住）；无 0–12 月家庭延伸</td></tr>
+        <tr><td><b>月子餐配送</b></td><td>区域作坊为主，28–42 天热餐配送</td><td>全国持证机构两千余家、高度分散、无全国品牌（<span class="ev c">C</span>）</td><td>只管产褥期、盒饭形态油盐不稳、无冷食与订阅能力</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">6.3 对标结论：现有方案的四层盲区</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>为什么现有机构都没解决产后四层问题</caption>
+      <thead><tr><th scope="col">盲区</th><th scope="col">现有方案的缺失</th><th scope="col">本产品线的填补</th></tr></thead>
+      <tbody>
+        <tr><td><b>① 时间断层</b></td><td>WHO/ACOG/月子中心只管到产后 6 周–28 天；出院后 11 个月无人覆盖</td><td>0–12 月三期订阅（月里盒/随身盒/轻身盒）</td></tr>
+        <tr><td><b>② 文化断层</b></td><td>国际指南不涉东亚月子文化；西方方案无法在中国月子场景落地</td><td>「求同存异」承继哲学——承接中式认知、改造工艺配比</td></tr>
+        <tr><td><b>③ 形态断层</b></td><td>营养补充剂（药片/奶粉）无食物体验；月子餐（盒饭）无冷食能力；鲜炖燕窝（单品类）不成一餐</td><td>热食盅＋冷食杯＋风味水三形态互补；以订阅盒整合为「一餐＋一杯＋一水」</td></tr>
+        <tr><td><b>④ 合规断层</b></td><td>月子餐作坊不审配料表；即食滋补品普遍功效话术越界；13 种红灯药材仍在民间广泛使用</td><td>全案合规红线体系（第 14 章）：13 种药材零进入、含醇零容忍、禁用词矩阵、含量声称以送检为准</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="conclusion"><p>全球经验指向同一个现代化公式：温热、软烂、以鱼禽瘦肉与奶豆为蛋白主体的餐食结构，加上标准化供给。中国市场的独特资产是深厚的月子食俗与燕窝文化，独特缺口是没有品牌用膳食指南的语言把这套食俗重做一遍。标准已建立（T/CNSS 014、T/CAS 823）、消费习惯已教育（鲜炖燕窝订阅）、市场空位已确认（出院后 0–12 月）——窗口属于第一个把「出院后的月子餐桌」做成标准品牌的人。</p></div>
+</section>
+
+
+<section class="chapter" id="ch7">
+  <h2><span class="num">07</span>文化母体、决策链与记忆：谁在决定月子里吃什么</h2>
+  <p class="chapter-lead">月子餐的购买者、食用者、影响者常常是三个人。不理解这一点，配方再正确也会被端下餐桌。中国营养学会团体标准把月子膳食定义为「文化习俗与心理照护载体」——文化认同是产品设计的输入项，不是要被纠正的对象。</p>
+
+  <h3 class="block">7.1 月子餐是一场代际照护仪式</h3>
+  <p>在多数中国家庭里，月子里的一碗汤承担三重功能：给产妇的营养、给长辈的参与感、给家庭新成员到来的仪式确认。婆婆或妈妈亲自炖汤，是这一代母亲表达「我在照顾你」的主要方式；月嫂的专业权威很大一部分也通过月子餐单建立。这带来一个反直觉的产品要求：<b>一款「比家里更科学」的产品，如果长得像对婆婆手艺的否定，就会被决策者否决。</b>年轻妈妈可以自己买冷食杯返工喝，但热食盅必须能端上家里餐桌、经得起床边点评。产品设计的核心约束在于：不能对既有饮食方式形成否定姿态，而应在保留食材形态与口感的前提下完成营养结构替换。</p>
+
+  <h3 class="block">7.2 三类角色与四种消费场景</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>月子餐决策链：谁买、谁吃、谁拍板</caption>
+      <thead><tr><th scope="col">角色</th><th scope="col">是谁</th><th scope="col">关心什么</th><th scope="col">产品应对</th></tr></thead>
+      <tbody>
+        <tr><td><b>食用者</b></td><td>产妇</td><td>0–3 月在家、胃口差、易疲劳，关注体重与状态但不被允许明说；3–6 月返工背奶、无热饭条件；6–12 月进入体重管理。要好吃、省事、体重友好、心理上「被照顾」</td><td>热盅软糯热乎、冷杯便携体面；成分表干净；甜盅提供情绪安抚</td></tr>
+        <tr><td><b>决策者/影响者</b></td><td>长辈与月嫂</td><td>认知由地方月子习俗构成：奶白鱼汤、老母鸡汤、红糖鸡蛋、红枣桂圆。不看营养成分表，看食材认不认得、汤色白不白、盅里有没有硬货</td><td>暖盏热食盅：奶白汤色、整盅硬货、食材名字老派，营养结构藏在配方表里</td></tr>
+        <tr><td><b>购买者</b></td><td>丈夫与送礼人</td><td>探病送礼要「拿得出手、不会出错、显得用心」；燕窝是这个场景的硬通货</td><td>月里盏燕窝礼盒：整盏可见、礼遇感、配料表干净；品牌曝光第一触点</td></tr>
+        <tr><td><b>复购决策者</b></td><td>产妇本人（产褥期后）</td><td>3–12 月决策权回归本人：口味、便携、体重管理、成分表</td><td>轻杯与每日水订阅制在这个阶段生效</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-scroll">
+    <table>
+      <caption>四种消费场景与产品承接</caption>
+      <thead><tr><th scope="col">场景</th><th scope="col">谁买、谁吃</th><th scope="col">承接方式</th></tr></thead>
+      <tbody>
+        <tr><td><b>自饮日常</b></td><td>产妇自购自吃</td><td>订阅盒、冷食杯、每日水；讲成分、便携、体重友好</td></tr>
+        <tr><td><b>长辈照护</b></td><td>长辈买或认可、产妇吃</td><td>暖盏热食盅；奶白汤色、整盅硬货、食材老派，营养在配方表里</td></tr>
+        <tr><td><b>探病送礼</b></td><td>丈夫/亲友买、产妇收</td><td>月里盏燕窝礼盒；整盏可见、礼遇感、配料干净</td></tr>
+        <tr><td><b>返工加餐</b></td><td>产妇自购、办公室吃</td><td>白燕轻乳、双白杯；开盖即饮、杯子不显眼、蛋白顶两个鸡蛋</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">7.3 情绪、社会连接与记忆</h3>
+  <ul class="bullets">
+    <li>产后抑郁全球合并患病率约 <b>17.2%</b>（565 项研究、80 国荟萃），中国报告率 14.8%–21.4%；平均发病于产后 14 周、高峰 2–3 个月。营养缺乏是可能的调节因素之一（2025 年 58 项研究系统综述中维 D、铁、B12、叶酸、锌与围产期抑郁呈负相关信号，以观察性证据为主），但食品的合法位置是「保证均衡营养＋筛查入口＋就医引导」，情绪类功效表述一律不做。</li>
+    <li>熟悉的味道、温度、香气与质地可触发自传体记忆与「被照顾」联想：2025 年预注册研究显示食物怀旧可经社会连接感提高舒适感；安慰食物研究提示传统安慰食物常伴高糖高脂，创新机会在于保留熟悉感与仪式感、改善营养结构。</li>
+    <li>睡眠剥夺与夜醒常态下，「不用自己动手、热一下就有一碗热乎的」本身即是被照顾感的交付；返工后办公室冰箱里的一杯，是自我关怀的固定仪式。</li>
+  </ul>
+
+  <h3 class="block">7.4 文化立场：承接，不教育</h3>
+  <p>民间月子认知里有大量与现代营养不符的成分。行业常见两种失败姿态：全盘照收（把高油高糖和违规药材做进产品），或站在习俗对面做科普（「反浓汤、科学坐月子」，把产品做成对长辈的批评）。本产品线的立场是第三种：<b>承认习俗的情感正当性，保留其可保留的营养内核，改掉工艺和剂量上的错误，全程不说教。</b></p>
+  <div class="callout gold">
+    <span class="ct">文案基调（均为合规表达）</span>
+    <p>「传统月子汤品，营养结构重新配比，口感完整保留。」「老人认得的每一味，营养师重新配过比例。」「奶白的汤色，一点点油都没有。」「燕窝在别人家里是礼品，在你这里是每天的一盏。」「哺乳妈妈的 15 分钟自我关怀时刻。」——情绪价值由体验交付，疗效承诺一个字不出现。全案对「少喝油腻汤」只做一次提醒（放在第 9 章热食线说明处），不重复、不做成口号。</p>
+  </div>
+  <div class="conclusion"><p>长辈看到的是奶白鱼汤、乌鸡山药、红枣桂圆燕窝，全是她认得的月子正经东西；产妇拿到手的是个位数脂肪、二十克蛋白、合规配料表。认知与营养在同一只盅里各取所需——这是这条产品线的文化策略，也是它的商业壁垒。</p></div>
+</section>
+<section class="chapter" id="ch8">
+  <h2><span class="num">08</span>民间方子资产盘点与燕窝的资产边界</h2>
+  <p class="chapter-lead">本章是产品线最底层的资产清单：先对月子里高频出现的 19 个民间方子逐个过堂（营养内核是否成立、传统做法错在哪、现代工艺怎么改、由哪款 SKU 落地），再对燕窝这一核心文化资产作成分事实与功效边界的定级。数据来自《中国食物成分表》第 6 版与已发表实测研究。</p>
+
+  <h3 class="block">8.1 十九个民间月子方子：留 / 改 / 弃总表</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>19 个高频月子方子资产盘点（<span class="ev a">A</span> 成分表、<span class="ev b">B</span> 陆路等实测与人群研究）</caption>
+      <thead><tr><th scope="col">民间方子</th><th scope="col">可保留的营养内核（实测）</th><th scope="col">传统做法的问题</th><th scope="col">现代改造与落地 SKU</th></tr></thead>
+      <tbody>
+        <tr><td><b>奶白鱼汤</b>（鲫鱼/黑鱼）</td><td>鲫鱼肉蛋白 17.1 g/100g、脂肪 2.7 g；黑鱼肉蛋白 18.5 g、脂肪 1.2 g、钙 120 mg；优质蛋白与 DHA 载体</td><td>白汤靠油煎鱼＋大火熬，额外油脂高；刺多；家庭撇油靠自觉</td><td>鱼＋豆腐滚制乳化出白汤，不油煎，实测汤脂肪 0.3–0.6 g/100mL；去刺鱼片 80–100 g 固体上盅。落地：<b>雪浪渔盅</b></td></tr>
+        <tr><td><b>老母鸡汤</b></td><td>「月子鸡」认知极强；鸡肉本身蛋白约 20 g/100g</td><td>老母鸡原料实测脂肪 259.7 mg/g，煲 5h 汤脂肪 9.6 mg/mL，为各汤最高；料酒去腥含醇</td><td>换乌鸡：原料脂肪实测 23.4 mg/g、煲汤脂肪 1.1 mg/mL 为各汤最低，「月子鸡」地位等同；姜＋陈皮去腥，无料酒。落地：<b>乌凤盅</b></td></tr>
+        <tr><td><b>猪蹄汤</b></td><td>猪蹄蛋白 22.6 g/100g；但胶原蛋白为大分子，不直接以胶原形式吸收</td><td>脂肪 18.8 g/100g，皮部脂肪撇不净；「花生猪蹄」民俗味型高油</td><td>猪蹄不进首发；味型用花生（≤20 g/份）＋瘦猪里脊/牛腱承接。落地：<b>莲年红肉盅</b></td></tr>
+        <tr><td><b>红肉补身</b>（牛肉/瘦肉）</td><td>牛腱蛋白 20.2 g、脂肪 2.3 g、铁 3.3 mg（血红素铁，吸收率 15–35%）；猪里脊铁 1.5 mg</td><td>民间「喝汤不吃肉」：煲汤蛋白溶出率仅 7.8–23%，200 mL 汤最多 3.18 g 蛋白，肉才是营养本体</td><td>肉块炖至入口即化、固体上盅，汤做载体；单份铁最高 3.9 mg。落地：<b>莲年红肉盅</b>（牛腱/里脊双款）</td></tr>
+        <tr><td><b>小米粥</b></td><td>小米碳水 75.1 g、维生素 B1 0.33 mg，能量密度高、易消化</td><td>纯米汤内容物稀薄；「只喝粥」营养单薄</td><td>小米 30 g＋山药 50 g＋南瓜＋红枣，可加蛋花一枚，把粥做成有固体内容物的羹。落地：<b>金粱羹</b></td></tr>
+        <tr><td><b>红枣桂圆</b></td><td>天然甜味与文化符号；干枣铁 2.3 mg、桂圆多糖；满足月子期「吃甜」心理需求</td><td>干枣碳水 67.8 g、桂圆 71.5 g，高糖；植物铁吸收率仅 3–5%，补铁靠红肉与动物血</td><td>红枣 2–3 颗、桂圆 3–5 g 控量做天然甜味，替代添加糖；只讲天然甜味与控量，不讲任何功效。落地：<b>月里盏·枣圆燕</b>、金粱羹、五红水光饮</td></tr>
+        <tr><td><b>五红汤</b>（红豆/红枣/红衣花生/枸杞/红糖）</td><td>赤小豆干品蛋白 20.2 g、铁 7.4 mg、纤维丰富；枸杞铁 5.4 mg；补水＋植物蛋白组合有真实价值</td><td>红糖 96.6% 是糖、铁可忽略；家庭版糖量失控</td><td>去红糖，用红枣 2 颗提甜，赤小豆＋红衣花生＋枸杞煮水，低糖灌装。落地：<b>五红水光饮</b></td></tr>
+        <tr><td><b>豆浆</b></td><td>浓豆浆蛋白 3–6 g/100mL；植物基、乳糖不耐可饮</td><td>家庭稀浆蛋白浓度不稳；钙天然含量仅约 20 mg/200mL，替代不了奶</td><td>用 5–6 g/100mL 浓豆乳＋燕窝；钙按 GB 14880 强化至 200 mg（法规复核中）。落地：<b>双白杯</b></td></tr>
+        <tr><td><b>牛奶</b></td><td>牛乳钙约 108 mg/100mL 且吸收率高；但月子期奶/蔬菜被传统禁忌压制，牛奶食用频率仅 23.5%</td><td>全脂奶脂肪 3.6 g/100mL；返工期没有热奶条件</td><td>超滤高蛋白奶 200 mL（蛋白 12 g、钙 240 mg、脂肪 1 g）＋燕窝，冷杯即饮。落地：<b>白燕轻乳</b></td></tr>
+        <tr><td><b>燕窝</b></td><td>干盏蛋白 56.34–69.5%、唾液酸 7.64–12.52%（天然食物中较高区间）；文化资产与礼遇符号价值最高</td><td>3 g 干盏仅提供蛋白约 1.8 g，且为半完全蛋白，单吃营养效率低；鲜炖品含糖普遍偏高</td><td>燕窝做礼遇载体、糯感质地与冷食价值锚，蛋白任务交给奶、蛋、肉互补；糖 ≤5 g/100mL 走低糖声称。落地：<b>月里盏、鲜盏、白燕轻乳、双白杯</b></td></tr>
+        <tr><td><b>阿胶</b></td><td>文化资产极强，「月子体面」符号；蛋白约 75 g（胶原蛋白为主）</td><td>缺色氨酸、为不完全蛋白，铁含量低，民间功效说法无营养学依据；价格高</td><td>3 g 小剂量入燕窝盅做礼遇高配，不承担营养声称、不讲功效。落地：<b>月里盏·阿胶燕</b></td></tr>
+        <tr><td><b>黑芝麻核桃</b></td><td>黑芝麻钙 780 mg/100g、铁 22.7 mg；核桃 n-3 脂肪酸；香气接受度高</td><td>黑芝麻脂肪 46.1 g、核桃 58.8 g，热量极高，须严格控量；民间功效说法无依据</td><td>5–15 g 小剂量入糊/杯，只标钙含量与小剂量事实。落地：<b>乌麻燕</b></td></tr>
+        <tr><td><b>木瓜</b></td><td>β-胡萝卜素 870 μg、木瓜蛋白酶、碳水 7 g，低热量水果；鱼汤经典搭配视觉成立</td><td>民间附会的功效说法无依据</td><td>木瓜块 60 g 入燕窝盅/冷杯，讲食材搭配不讲功效。落地：<b>月里盏·木瓜燕</b></td></tr>
+        <tr><td><b>莲子百合</b></td><td>干莲子蛋白 17.2 g、碳水 67 g；百合多糖；「睡前一碗」场景心智真实存在</td><td>该场景只可作生活方式描述，睡眠相关功效表述属违规暗示（禁用词见第 13 章）</td><td>莲子 15 g 炖至粉糯＋百合 8 g 入甜盅，讲「清甜、睡前一碗」的场景与食材。落地：<b>月里盏·雪梨燕</b>、红肉盅配莲子</td></tr>
+        <tr><td><b>山药茯苓</b></td><td>山药钾 213 mg、黏液蛋白、碳水 12.4 g 可代部分主食；茯苓多糖、热量极低、天然增稠</td><td>中医功效语境表述不可宣称（禁用词见第 13 章）</td><td>山药做炖盅碳水基底替代部分精米，茯苓打粉入羹增稠。落地：<b>乌凤盅、金粱羹</b></td></tr>
+        <tr><td><b>银耳</b></td><td>银耳多糖（可溶性膳食纤维）提供糯滑质地，热量极低；是「糯感替代浓稠」工艺的核心食材</td><td>家庭炖煮出胶时间长、品质不稳；中医功效语境不可宣称（禁用词见第 13 章）</td><td>银耳少量入暖盏各盅与桂花雪梨润饮，与燕窝胶质共同提供醇厚糯感、替代脂肪乳化。落地：<b>暖盏全线微量、桂花雪梨润饮</b></td></tr>
+        <tr><td><b>金针菜（黄花菜）</b></td><td>干品蛋白 19.4 g、铁 8.1 mg、钙 301 mg、钾 610 mg，被低估的高营养干货</td><td><b>鲜品含秋水仙碱有毒，必须干制泡发、沸水焯透</b>；民间功效说法无依据</td><td>干金针菜泡发后入鱼汤/瘦肉汤轮换，讲食材不讲功效。落地：<b>雪浪渔盅·金针款（候选轮换）</b></td></tr>
+        <tr><td><b>鸡蛋</b></td><td>蛋白 13.3 g/枚、胆碱 130 mg/枚、卵磷脂；月子硬通货，零认知障碍</td><td>家庭常见做法红糖煮蛋糖量过高</td><td>蛋花入羹、整蛋配餐；胆碱缺口（成人仅 3.7% 达标）的低成本补充。落地：<b>金粱羹（加蛋款）</b></td></tr>
+        <tr><td><b>醪糟/月子酒</b></td><td>无不可替代营养</td><td><b>含酒精 1–3%；USDA 实测炖煮 1 小时仍残留约 25% 酒精，乳母酒精红线明确</b></td><td><b>全线弃用</b>：醪糟、料酒、月子酒不进任何 SKU，去腥用姜＋陈皮＋紫苏</td></tr>
+        <tr><td><b>黄芪党参等月子药膳</b></td><td>无普通食品身份下的可用价值</td><td><b>黄芪、党参、西洋参、灵芝、天麻、地黄等 13 种，国家公告明示「哺乳期妇女不推荐食用」；四物汤等整方原料大部分触红线</b></td><td><b>全线弃用</b>，不进配料表；当归仅可香辛料级 1–2 片且品名不主打；药食同源食材按碳氮脂重配比，不讲药材功效</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="stat-grid">
+    <div class="stat"><div class="v">15 / 19</div><div class="k">方子有可保留的营养内核，改造后进入产品线</div></div>
+    <div class="stat"><div class="v">2 项</div><div class="k">工艺级替换：乌鸡替老母鸡、滚制替油煎</div></div>
+    <div class="stat"><div class="v">2 类</div><div class="k">全线弃用：含醇配料、13 种红灯药材与方剂</div></div>
+    <div class="stat"><div class="v">0 个</div><div class="k">需要否定的民俗情感——只改做法，不否定心意</div></div>
+  </div>
+  <p>这张表解释了产品名单的来源：<b>13 款产品没有一款需要凭空发明</b>——民间月子菜单经过营养与合规过堂，自然收敛成可标准化的产品。每一款都能在婆婆的菜谱上找到原型，这是它能端上家庭餐桌的原因；每一款的脂肪、糖、蛋白又都经过重新配比，这是它值这个价钱的原因。</p>
+
+  <h3 class="block">8.2 燕窝：成分事实（A/B 级，可作含量陈述）</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>燕窝成分基线与行业标准（成品以批次实测为准）</caption>
+      <thead><tr><th scope="col">项目</th><th scope="col">数值/事实</th><th scope="col">来源与用途</th></tr></thead>
+      <tbody>
+        <tr><td>干燕窝蛋白质</td><td>56.34%–69.5%（水溶糖蛋白为主）</td><td>宋咏烨等综述（中国食物与营养 2024，汇集 8 篇文献）；可作投料成分事实</td></tr>
+        <tr><td>干燕窝脂肪</td><td>0.03%–1.28%（极低脂）</td><td>同上；燕窝本身几乎不贡献脂肪</td></tr>
+        <tr><td>唾液酸（N-乙酰神经氨酸）</td><td>干重 <b>7.64%–12.52%</b>，已知天然食物中较高水平；3 g 干盏约含 0.23–0.38 g</td><td>同上；行业分级标准 ≥10/7/5 g/kg；对外宣传取最低批限值</td></tr>
+        <tr><td>蛋白质质量</td><td>半完全蛋白，必需氨基酸比例不理想；5 g 干品蛋白约 3 g，不及一枚 50 g 鸡蛋（约 6 g）</td><td>产品蛋白靠奶、蛋、肉、豆互补</td></tr>
+        <tr><td>唾液酸食物对照</td><td>5 g 干燕窝约 500 mg；乌鸡蛋约 200 mg、普通鸡蛋约 20 mg；母乳成熟乳约 0.3–0.5 g/L（初乳更高），婴儿肝脏可内源性合成</td><td>成分事实陈述，不接任何功能句</td></tr>
+        <tr><td>投料与制品标准</td><td>燕盏行业分级 GH/T 1092；燕窝制品投料比不得低于 1%（QB/T 5916—2023）；干盏常用日投料 3 g，泡发率 6–12 倍</td><td>投料量与固形物标注依据</td></tr>
+        <tr><td>溯源</td><td>进口燕窝须凭 CAIQ 溯源（2013 年起实施）；警惕亚硝酸盐、漂白剂、非法添加</td><td>供应商须提供溯源码与亚硝酸盐检测报告</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 class="block">8.3 燕窝：功效证据等级（D 级为主，全部不可转译为声称）</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>燕窝功效主张的证据现状与合规判定</caption>
+      <thead><tr><th scope="col">宣称方向</th><th scope="col">证据现状</th><th scope="col">等级</th><th scope="col">合规判定</th></tr></thead>
+      <tbody>
+        <tr><td>唾液酸促进胎儿/婴儿神经发育、提升学习记忆</td><td>仅动物与体外研究（孕哺期母鼠喂燕窝提取物后子代迷宫表现改善、海马 BDNF 通路上调，综述汇总 10 余项研究）；<b>无人体 RCT、无人体神经发育终点</b></td><td><span class="ev d">D</span></td><td>普通食品禁止声称</td></tr>
+        <tr><td>免疫力类主张</td><td>动物实验证据；品牌方称完成人群试验但未见同行评议发表文本</td><td><span class="ev d">D</span>＋<span class="ev c">C</span></td><td>普通食品禁止声称（禁用词见第 13 章）</td></tr>
+        <tr><td>抗氧化、神经保护、抗病毒</td><td>体外/动物证据</td><td><span class="ev d">D</span></td><td>禁止声称</td></tr>
+        <tr><td>皮肤与 EGF 类成分主张</td><td>燕窝中是否含 EGF 无明确研究证明；即便存在，高温炖煮与消化道降解使其不可能以活性形式到达皮肤</td><td><span class="ev d">证据不足/否定</span></td><td>禁止声称（禁用词清单见第 13 章）</td></tr>
+        <tr><td>孕产调养类功效主张</td><td>无任何研究；且属法规禁止普通食品声称的功效</td><td><span class="ev d">无证据＋合规禁止</span></td><td>全线禁用（禁用词清单见第 13 章）</td></tr>
+        <tr><td>助孕（「受孕率提升 312.5%」等）</td><td>仅见于品牌宣传文案，查无公开发表的人体研究</td><td><span class="ev c">C</span> 营销话术</td><td>不可引用</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout warn">
+    <span class="ct">安全红线：燕窝过敏</span>
+    <p>燕窝可引起 IgE 介导的过敏反应（皮疹、哮喘，严重者过敏性休克），新加坡儿童食物过敏队列中燕窝是已识别过敏原之一，残留燕羽也可致敏；过敏体质者、蛋白质过敏者慎用，<b>不建议给婴幼儿（尤其 4–6 月龄内）直接食用</b>。所有含燕窝 SKU 包装必须强制标注过敏提示，文案不得出现「宝宝也能吃」「辅食添加」类表述。</p>
+  </div>
+  <div class="conclusion"><p>燕窝是 Hero ingredient（英雄原料）与文化锚点，奶、蛋、肉、豆与银耳是 Evidence engine（功能与质地引擎）。品牌故事围绕燕窝，营养交付与口感交付依靠完整配方。燕窝相关的所有科学话术止步于「唾液酸干重含量 7.64%–12.52%，为已知天然食物中较高水平」这一句成分事实。</p></div>
+</section>
+<section class="chapter" id="ch9">
+  <h2><span class="num">09</span>品牌与产品组合架构、竞争定位</h2>
+  <p class="chapter-lead">品牌主名「小鲜孕 / 小鲜后」双候选并列，由客户在研讨会上择一（正文行文暂以「小鲜后」指代）；系列名沿用 v5 蓝本的「暖盏 / 轻杯 / 每日水」，单品名（雪浪渔盅、白燕轻乳等）需商标查重后冻结。三线按产后三期节奏配齐，形成「期 × 线」九格组合。</p>
+
+  <h3 class="block">9.1 品牌主名：双候选</h3>
+  <div class="table-scroll t-min">
+    <table>
+      <caption>品牌主名候选比较（均需商标查重后冻结）</caption>
+      <thead><tr><th scope="col">候选</th><th scope="col">语感与覆盖</th><th scope="col">优势</th><th scope="col">注意点</th></tr></thead>
+      <tbody>
+        <tr><td><b>小鲜孕</b></td><td>「孕」覆盖孕期至产后，与哺乳期连续</td><td>与既有「小鲜」品牌序列（小鲜力/小鲜生/小鲜养）衔接；孕期客户可顺流至产后，产品线可前伸</td><td>「孕」字对已生产用户略有距离；孕期食品合规同样严格</td></tr>
+        <tr><td><b>小鲜后</b></td><td>「产后」专属，人群指向最直接（v5 蓝本用名）</td><td>月子场景识别度最高；与各类违规功效话术无字面关联</td><td>品牌生命周期绑死产后 12 个月；前伸孕期需另起副名</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">9.2 三条产品线</h3>
+  <div class="lines">
+    <div class="line-card warm">
+      <h3>暖盏</h3><span class="en">WARM STEW BOWL</span>
+      <dl>
+        <dt>形态</dt><dd>即热即食滋补炖盅，280 g 盅装连肉带汤，水浴 8 分钟 / 微波 90 秒</dd>
+        <dt>任务</dt><dd>月子里的一顿饭：蛋白、铁、钙与热汤仪式感</dd>
+        <dt>核心工艺</dt><dd>瘦肉为底＋燕窝银耳糯感＋滚制不油煎＋选料替撇油＋固体上盅</dd>
+        <dt>主推期</dt><dd>D1 主力，全期可食</dd>
+      </dl>
+    </div>
+    <div class="line-card cup">
+      <h3>轻杯</h3><span class="en">FRESH BIRD'S NEST CUP</span>
+      <dl>
+        <dt>形态</dt><dd>冷食燕窝营养杯，200–250 mL 杯装，冷链开盖即食</dd>
+        <dt>任务</dt><dd>返工后背包与办公室冰箱的加餐：蛋白、钙与甜品替代</dd>
+        <dt>核心配方</dt><dd>超滤高蛋白奶 / 浓豆乳双基底＋即食燕窝</dd>
+        <dt>主推期</dt><dd>D2 主力，全期可食</dd>
+      </dl>
+    </div>
+    <div class="line-card water">
+      <h3>每日水</h3><span class="en">DAILY FLAVORED WATER</span>
+      <dl>
+        <dt>形态</dt><dd>有口感的养生补水，350 mL 瓶装，低糖 / 无糖</dd>
+        <dt>任务</dt><dd>哺乳期每日 +500–1000 mL 饮水增量的口感解决</dd>
+        <dt>核心配方</dt><dd>药食同源食材与普通食材调香，甜味靠食材本身</dd>
+        <dt>主推期</dt><dd>全期高频，礼赠流通主力</dd>
+      </dl>
+    </div>
+  </div>
+
+  <h3 class="block">9.3 竞争格局：四层替代关系与定位</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>小鲜后的竞争对手不是某一家公司，而是四个层面的替代</caption>
+      <thead><tr><th scope="col">竞争层</th><th scope="col">代表供给</th><th scope="col">优势</th><th scope="col">盲区与切入点</th></tr></thead>
+      <tbody>
+        <tr><td><b>家庭自制</b></td><td>婆婆/妈妈/月嫂煲汤</td><td>情感价值最高、零边际成本、食材可信任</td><td>营养结构随机（高油高糖、药材越界）、刺多油腻、产妇返工后断供。以「给长辈减负」姿态进入：食材她认得，做法替她标准化，热盅与家厨共存而非替代</td></tr>
+        <tr><td><b>月子餐外送</b></td><td>区域月子餐作坊、连锁外送</td><td>热餐、餐单完整、产褥期认知强</td><td>高度分散（全国持证机构两千余家、无全国品牌）、盒饭形态油盐不稳、只管 28–42 天、无订阅与冷食能力。用冷链工业标准与 0–12 月全周期订阅错位</td></tr>
+        <tr><td><b>月子中心</b></td><td>圣贝拉等，单客约 6.8 万元</td><td>28 天院内全托管、专业背书强</td><td>渗透率仅 5.5%、出院即服务终止、价格门槛高。做「出院后的月子中心餐桌」，客单价是其零头，覆盖另外 94.5% 的家庭</td></tr>
+        <tr><td><b>即食滋补</b></td><td>小仙炖、燕之屋</td><td>订阅模式成熟、冷链直达、品牌集中、礼品心智强</td><td>单盏蛋白约 1.8 g 成不了一餐；不覆盖铁、钙、纤维缺口；无糖/低糖标准参差。把燕窝从「一餐的全部」变为「一餐里的礼遇件」，用奶、豆、鱼、肉承载营养</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout teal">
+    <span class="ct">定位陈述</span>
+    <p><b>给产后 0–12 个月家庭的「月子标准餐」——老人认得的老几样，营养师重配的比例，开盖即食的热盅与冷杯，按月订阅到家。</b>品类定义上不是月子餐外卖（重物流、区域性、28 天），不是即食燕窝（单品类、礼品化），而是「产后营养订阅餐」：以即食滋补行业验证过的订阅冷链模型，承载月子餐的文化内容与营养结构。</p>
+  </div>
+  <h3 class="block">9.4 与主品牌及燕窝业务的协同、差异化壁垒</h3>
+  <ul class="bullets">
+    <li><b>客群协同：</b>鲜炖燕窝现有客群与产后客群高度重合（25–40 岁女性、母婴家庭、礼赠场景）；孕期客户是产后线天然前置流量，「孕期订燕窝、产后订小鲜后」构成连续订阅。燕窝以月里盏、鲜盏、白燕轻乳、双白杯四款形态出现，把礼品客户转化为日饮订阅客户。</li>
+    <li><b>供应链协同：</b>冷食杯与鲜炖燕窝共享冷链、灌装与订阅履约体系；热食盅新增冷藏短保产线，是这条线唯一的重资产增量。</li>
+    <li><b>四道壁垒：</b>文化壁垒（19 方子资产盘点与「承接不教育」立场，天然过长辈关）、合规壁垒（13 种红灯药材、含醇配料、功效声称的完整红线体系）、数据壁垒（三期营养缺口证据链与食材级测算）、模式壁垒（热食＋冷食＋饮水三形态、0–12 月三期订阅，单层竞争者难以短期复制全结构）。</li>
+  </ul>
+  <div class="table-scroll">
+    <table>
+      <caption>三期 × 三线组合矩阵（★ 主力 ○ 辅助）</caption>
+      <thead><tr><th scope="col">阶段</th><th scope="col">暖盏（热食）</th><th scope="col">轻杯（冷食）</th><th scope="col">每日水（饮品）</th><th scope="col">盒型</th></tr></thead>
+      <tbody>
+        <tr><td><b>D1 0–3 月</b></td><td>★ 雪浪渔盅、乌凤盅、莲年红肉盅隔日轮换；金粱羹早餐位；月里盏每周 2 盅</td><td>○ 鲜盏礼赠、白燕轻乳补钙</td><td>★ 五红水光饮、西梅纤纤饮</td><td>月里盒（热食为主）</td></tr>
+        <tr><td><b>D2 3–6 月</b></td><td>○ 周末热盅轮换</td><td>★ 白燕轻乳＋双白杯工作日进办公室冰箱</td><td>★ 每日水进通勤包；桂花雪梨润饮</td><td>随身盒（冷食为主）</td></tr>
+        <tr><td><b>D3 6–12 月</b></td><td>★ 莲年红肉盅（牛腱款）固定；乌凤盅</td><td>★ 白燕轻乳、乌麻燕；脱脂奶基底</td><td>○ 莓果水、桂花雪梨润饮</td><td>轻身盒（低脂高蛋白）</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="chapter" id="ch10">
+  <h2><span class="num">10</span>产品线一：<span class="tagline tag-warm">暖盏</span> 即热即食热食炖盅（5 款）</h2>
+  <p class="chapter-lead">暖盏把民间公认的好配方（鱼汤、鸡汤、瘦肉、小米、红枣桂圆、燕窝）全部保留，把传统肉汤的工艺逻辑重做一遍。<b>产品形态是高蛋白低脂瘦肉炖汤，醇厚口感的关键在于：用燕窝胶质与银耳多糖（可溶性膳食纤维）的「糯」，替代传统肉汤靠脂肪乳化形成的「浓稠」</b>——传统猪蹄汤、老母鸡汤、鲫鱼汤的浓稠感来自脂肪乳化，暖盏以银耳与燕窝的糯滑提供同等醇厚，从而把脂肪大幅降下来；配合滚制不油煎、选料替撇油、固体上盅，把蛋白质足量留在肉里。</p>
+
+  <h3 class="block">10.1 统一技术叙事：五项现代工艺＋糯感替代浓稠</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>暖盏线工艺动作与事实依据（<span class="ev b">B</span> 陆路等实测、<span class="ev a">A</span> 成分表与团标）</caption>
+      <thead><tr><th scope="col">工艺</th><th scope="col">传统做法</th><th scope="col">暖盏做法</th><th scope="col">依据</th></tr></thead>
+      <tbody>
+        <tr><td>① 糯感替代浓稠</td><td>脂肪乳化形成奶白与厚口感</td><td>燕窝胶质＋银耳多糖（可溶性膳食纤维）提供糯感与醇厚，热量极低</td><td>用户产品定义；银耳多糖为可溶性膳食纤维，茯苓打粉亦天然增稠</td></tr>
+        <tr><td>② 滚制乳化替代油煎</td><td>油煎鱼＋大火熬，脂肪乳化出白汤</td><td>鱼与豆腐（植物蛋白）一同滚制同样乳化出白汤；清水鱼汤实测脂肪仅 0.3–0.6 g/100mL</td><td>陆路等实测：滚制鱼汤脂肪 0.3–0.6 g/100mL</td></tr>
+        <tr><td>③ 选料替撇油</td><td>猪蹄、老母鸡，家庭撇油靠自觉且撇不净</td><td>黑鱼/鲫鱼（脂肪 1.2–2.7 g/100g）、牛腱（2.3 g）、乌鸡（原料实测 23.4 mg/g）、猪里脊（7.9 g）</td><td>陆路等：乌鸡原料脂肪 23.4 vs 老母鸡 259.7 mg/g；成分表第 6 版</td></tr>
+        <tr><td>④ 固体上盅</td><td>喝汤为主，肉被弃置或吃不下</td><td>280 g 盅装连肉带汤，每盅固体肉/鱼 80–100 g，炖至入口即化，汤只做载体</td><td>汤中蛋白仅为肉的约 1/16；煲汤蛋白溶出率 7.80%–22.98%</td></tr>
+        <tr><td>⑤ 低糖控量制度化</td><td>红糖、桂圆、红枣糖量靠手感</td><td>红枣 2–3 颗、桂圆 3–5 g、枸杞 3–8 粒，甜味全来自食材；糖 ≤5 g/100mL 达低糖门槛</td><td>红糖约 96.6% 为糖；GB 28050 低糖门槛</td></tr>
+        <tr><td>⑥ 药食同源重配比</td><td>按「功效」逻辑配伍，药材越界</td><td>山药、莲子、茯苓、赤小豆等按碳水/蛋白/脂肪重新配比；13 种红灯药材不进配料表，当归仅香辛料级 1–2 片且不主打</td><td>卫法监发〔2002〕51 号；2023/2024 公告</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">10.2 脂肪降幅：数字能支撑到什么程度</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>传统家常浓汤基准 vs 暖盏配方目标（每份量；基准碗为按食材成分数据推算的对照基准，须以第三方基准样品检测校准）</caption>
+      <thead><tr><th scope="col">对照</th><th scope="col">脂肪</th><th scope="col">蛋白质</th><th scope="col">热量</th><th scope="col">数据性质</th></tr></thead>
+      <tbody>
+        <tr><td>家常猪脚汤（猪蹄 500 g 出 5 碗，每碗 280 g）</td><td>≈18.8 g/碗</td><td>主要留在肉里</td><td>高（猪蹄约 260 kcal/100 g）</td><td>按成分表推算，待基准检测</td></tr>
+        <tr><td>家常肥老母鸡汤（连肉带汤 280 g）</td><td>≈13.1 g/碗</td><td>汤 1.3 g/100 g、肉 20.9 g/100 g</td><td>中高</td><td>成分表瓦罐鸡汤数据推算</td></tr>
+        <tr><td>家常油煎奶白鲫鱼汤（煎鱼＋加油，每碗 280 g）</td><td>≈8.8 g/碗</td><td>汤低、肉高</td><td>中</td><td>按食材与煎油推算，待基准检测</td></tr>
+        <tr><td colspan="5" style="background:var(--teal-soft)"><b>暖盏配方目标（每 280 g 盅）</b></td></tr>
+        <tr><td>乌凤盅（乌鸡 90 g＋山药枸杞红枣）</td><td>≈2.3 g</td><td>15–20 g（区间以送检为准）</td><td>≈170 kcal</td><td>配方框架估算</td></tr>
+        <tr><td>莲年红肉盅（牛腱 80 g＋莲子山药）</td><td>≈2.3 g</td><td>20.4 g</td><td>201 kcal</td><td>配方框架估算</td></tr>
+        <tr><td>雪浪渔盅（黑鱼/鲫鱼 80–100 g＋豆腐 100 g）</td><td>3.7–6.2 g</td><td>22.7–24.9 g</td><td>168–201 kcal</td><td>配方框架估算</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout rule">
+    <span class="ct">降幅结论（诚实口径，不凑数）</span>
+    <p><b>有实测支撑的：</b>① 原料选料层——陆路等同研究实测原料脂肪老母鸡 259.7 mg/g vs 乌鸡 23.4 mg/g，<b>降幅约 91%</b>；猪蹄（18.8 g/100g）改牛腱（2.3 g/100g）约 88%。② 成品汤体层——煲 5 小时汤脂肪老母鸡汤 9.6 mg/mL vs 乌鸡汤 1.1 mg/mL，<b>降幅约 88.5%</b>；鱼＋豆腐滚制白汤实测脂肪仅 0.3–0.6 g/100mL（不油煎）。<b>按家常基准碗推算的：</b>成品盅脂肪 2.3–6.2 g 对家常基准碗 8.8–18.8 g，<b>降幅约 58%–88%</b>（乌凤盅/牛腱盅对猪脚汤约 88%、对油煎鱼汤约 74%；雪浪渔盅对鱼汤基准约 58%），且家常基准碗目前无成品实测。<b>因此「成品脂肪较传统家常炖法直降 90% 以上」列为配方目标与打样验证方向——表述为「配方目标：每盅脂肪较传统家常炖法下降 90% 以上（以打样检测与基准样品对比为准）」，在基准样品对比检测达成前不上包装、不进广告；现阶段可确定的公开表达是「选料脂肪实测下降约 91%（乌鸡对老母鸡，陆路等实测）」。</b>比较声称必须标明参照基准（「相较传统家常炖法／同等份量传统浓汤」），上市需以第三方检测报告支撑；产品文案对脂肪含量只作营养素含量事实陈述，不得引申任何体重管理或身体恢复类功效（完整红线见第 13 章）。</p>
+  </div>
+
+  <h3 class="block">10.3 暖盏 SKU 定义（5 款固定＋1 候选轮换）</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>暖盏线 SKU 全表（营养数字为配方框架估算区间，以打样检测为准；卖点只讲食材与工艺）</caption>
+      <thead><tr><th scope="col">SKU</th><th scope="col">核心配方</th><th scope="col">规格/营养目标*</th><th scope="col">卖点（食材工艺）</th><th scope="col">主推期/合规语言</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>雪浪渔盅<br>奶白鱼片豆腐盅<br><span class="tagline tag-warm">首发英雄</span></td>
+          <td>去刺黑鱼片或鲫鱼肉 80–100 g、嫩豆腐 100 g、山药片 50 g、枸杞 5–8 粒、生姜、紫苏；鲫鱼款配干金针菜（泡发焯透）；鱼与豆腐滚制白汤，不油煎，撇净浮油，低盐；银耳微量增糯</td>
+          <td>280 g，水浴 8 分钟；黑鱼豆腐款 168 kcal、蛋白 22.7 g、脂肪 3.7 g、钙 224 mg、铁 2.5 mg；鲫鱼金针款 201 kcal、蛋白 24.9 g、脂肪 6.2 g、钙 196 mg、铁 2.9 mg</td>
+          <td>奶白汤色、汤面无油花；去刺鱼片可大口吃；老人一看就懂的月子鱼汤；「奶白的汤色，一点点油都没有」可被婆婆亲眼验证</td>
+          <td>D1/D2；蛋白供能比 50% 以上，按 GB 28050 达「高蛋白」门槛（以送检为准）；只讲汤色与老法子，不接功效话头</td>
+        </tr>
+        <tr>
+          <td>乌凤盅<br>山药枸杞乌鸡汤<br><span class="tagline tag-warm">月子鸡</span></td>
+          <td>乌鸡块 90 g（去骨，炖 1–1.5 小时）、铁棍山药 50 g、红枣 2 颗、枸杞 5–8 粒、生姜 3 片、陈皮少许；不放料酒，撇净浮油，低盐；银耳少许增糯</td>
+          <td>280 g；≈170 kcal；蛋白 15–20 g（成分表口径 22 g、陆路实测原料口径约 15 g，区间以送检为准）；脂肪 ≈2.3 g；铁 ≈2.7 mg</td>
+          <td>金黄清亮鸡汤、乌鸡炖到骨肉分离；乌鸡在民间认知里本就是「月子鸡」，脂肪含量却接近鸡胸肉；不靠撇油靠选料</td>
+          <td>全期；讲食材与汤色；脂肪对比表述按 8.2 节口径</td>
+        </tr>
+        <tr>
+          <td>莲年红肉盅<br>莲山红肉盅<br><span class="tagline tag-risk">补铁主线</span></td>
+          <td>牛腱肉 80 g（高铁款）或猪里脊 80 g（低脂款）炖至软烂、铁棍山药 50 g、去芯莲子 15 g（干）、红枣 2 颗、枸杞、生姜、八角少量；银耳增糯</td>
+          <td>280 g，微波 90 秒；牛腱款 201 kcal、蛋白 20.4 g、脂肪 2.3 g、铁 3.9 mg（全线单份最高）；猪里脊款 233 kcal、蛋白 20.0 g、脂肪 6.8 g、铁 2.3 mg</td>
+          <td>肉块软烂入口即化，月子里最想吃的「一碗有肉的汤」；莲子粉、山药糯；红肉是血红素铁来源（吸收率 15–35%）</td>
+          <td>全期，D3 固定牛腱款；铁按 GB 28050 以 NRV 百分比与标准句式表达</td>
+        </tr>
+        <tr>
+          <td>月里盏<br>燕窝甜盅系列（4 小款）<br><span class="tagline tag-warm">礼遇线</span></td>
+          <td>枣圆燕：燕窝（干盏 3 g 当量）＋红枣 2 颗＋桂圆肉 3–5 g；木瓜燕：燕窝＋木瓜块 60 g＋枸杞；雪梨燕：燕窝＋雪梨＋百合 8 g；阿胶燕：燕窝＋阿胶 3 g＋红枣</td>
+          <td>260 g，水浴温热；枣圆燕 51 kcal／木瓜燕 38 kcal／雪梨燕 48 kcal／阿胶燕 47 kcal；燕窝蛋白 2.3–4.3 g；唾液酸按成品批次实测标注（干盏 7.64%–12.52%，取最低批限值）</td>
+          <td>开盖见整盏、热乎清甜，甜味全来自食材；四小款覆盖红枣桂圆、木瓜、雪梨百合、阿胶四个最熟搭配；探病送礼与自饮两用</td>
+          <td>全期，每周 2 盅；讲唾液酸成分事实与文化传统；阿胶不做功效表述；燕窝过敏强制标注</td>
+        </tr>
+        <tr>
+          <td>金粱羹<br>小米山药南瓜羹<br><span class="tagline tag-water">早餐位</span></td>
+          <td>小米 30 g、山药 50 g、南瓜 30 g、红枣 1 颗、枸杞；可加蛋花 1 枚；茯苓打粉增稠</td>
+          <td>280 g，微波 90 秒；无蛋款 149 kcal、蛋白 3.7 g、碳水 32.0 g、铁 1.7 mg；加蛋款 239 kcal、蛋白 10.8 g、铁 2.9 mg（蛋黄带入胆碱约 130 mg）</td>
+          <td>「月子米」小米粥的升级碗，甜糯不用嚼；比米汤多了山药南瓜的固体内容物；产后胃口最差时的一碗</td>
+          <td>D1/D2；讲「暖胃好消化」口感描述，不做功效声称</td>
+        </tr>
+        <tr>
+          <td>鲫鱼金针盅（候选轮换）<br><span class="tagline tag-risk">候选</span></td>
+          <td>雪浪渔盅鲫鱼款轮换：干金针菜（干品蛋白 19.4 g、铁 8.1 mg/100g）泡发 2 小时以上、沸水焯透后入鱼汤；鲜品含秋水仙碱，<b>只用干制</b></td>
+          <td>280 g；约 201 kcal、蛋白 24.9 g、铁 2.9 mg</td>
+          <td>被低估的高营养干货入鱼汤，口感与营养双增</td>
+          <td>按季节/产能轮换；讲食材不讲功效；干制泡发焯透工艺固定为产线 SOP</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted)">* 配方框架估算值（数据基线：《中国食物成分表》第 6 版与陆路等煲汤实测），上市前以打样送检为准，包装标注值不得早于实测。乌鸡为 v4/v5 手册配方既有食材，予以保留。</p>
+  <div class="callout warn">
+    <span class="ct">关于油汤，全案只说这一次</span>
+    <p>传统浓汤的脂肪主要在汤面油层与煲煮用油里，家庭喝汤建议撇去浮油。小鲜后全部热盅在工艺端已完成选料与撇油（猪蹄脂肪 18.8 g/100g 不进首发，「花生猪蹄」民俗味型由花生 ≤20 g/份加瘦猪里脊/牛腱承接），成品脂肪可查成分表。此提醒全案仅出现于此，此后产品页只呈现配方与营养成分表。</p>
+  </div>
+
+  <h3 class="block">10.4 暖盏线循证依据总表</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>暖盏线 SKU → 循证依据 → 文献来源</caption>
+      <thead><tr><th scope="col">SKU / 食材</th><th scope="col">循证依据</th><th scope="col">来源 / DOI</th></tr></thead>
+      <tbody>
+        <tr><td>瘦肉炖汤（统一基底）</td><td>汤中蛋白仅为肉的约 1/16；煲汤蛋白溶出率 7.80%–22.98%；固体上盅确保蛋白足量摄入</td><td>陆路等《中华传统肉食煲汤的基本营养成分》，《食品工业科技》</td></tr>
+        <tr><td>乌鸡（选料替）</td><td>原料脂肪 23.4 vs 老母鸡 259.7 mg/g，降幅约 91%；煲 5h 汤脂肪 1.1 vs 9.6 mg/mL，降幅约 88.5%</td><td>陆路等同研究；成分表第 6 版</td></tr>
+        <tr><td>黑鱼/鲫鱼（低汞鱼）</td><td>黑鱼蛋白 18.5 g、脂肪 1.2 g/100g；鱼＋豆腐滚制白汤脂肪仅 0.3–0.6 g/100mL</td><td>成分表第 6 版；陆路等实测</td></tr>
+        <tr><td>牛腱（补铁主线）</td><td>蛋白 20.2 g、脂肪 2.3 g、铁 3.3 mg（血红素铁，吸收率 15–35%）</td><td>《中国食物成分表》第 6 版</td></tr>
+        <tr><td>燕窝胶质＋银耳多糖</td><td>银耳多糖为可溶性膳食纤维，提供糯滑质地、热量极低；燕窝唾液酸干重 7.64%–12.52%</td><td>宋咏烨等《燕窝营养成分研究进展》（中国食物与营养 2024）；银耳成分表</td></tr>
+        <tr><td>红枣桂圆（控量）</td><td>天然甜味与文化符号；干枣碳水 67.8 g/100g，控量做天然甜味替代添加糖</td><td>《中国食物成分表》第 6 版</td></tr>
+        <tr><td>小米＋山药（碳水基底）</td><td>小米碳水 75.1 g、B1 0.33 mg，能量密度高、易消化；山药钾 213 mg、黏液蛋白</td><td>《中国食物成分表》第 6 版</td></tr>
+        <tr><td>DHA（鱼盅线）</td><td>乳母 DHA ≥200 mg/d 推荐；每周 1–2 次低汞鱼 227–340 g</td><td>DRIs 2023（<span class="ev a">A</span>）；FDA/EPA 2022 鱼类建议（<span class="ev a">A</span>）</td></tr>
+        <tr><td>铁（红肉盅线）</td><td>乳母铁 RNI 24 mg/d；中国哺乳期贫血 32.0%；血红素铁吸收率 15–35% vs 植物铁 3–5%</td><td>Zhao 2019 队列（<span class="ev b">B</span>）；DRIs 2023（<span class="ev a">A</span>）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+<section class="chapter" id="ch11">
+  <h2><span class="num">11</span>产品线二：<span class="tagline tag-cup">轻杯</span> 冷食燕窝营养杯（4 款＋1 候选）</h2>
+  <p class="chapter-lead">轻杯补齐日常饮食中最难补齐的蛋白与钙缺口，同时提供可替代甜品的口感与情绪安抚。200–250 mL 杯装、冷链配送、开盖即食；奶基与豆基两条底并行，燕窝做礼遇载体、糯感来源与价值锚。返工后背包与办公室冰箱是主战场。</p>
+  <div class="table-scroll">
+    <table>
+      <caption>轻杯线 SKU 全表（营养数字为配方框架估算区间，以打样检测为准）</caption>
+      <thead><tr><th scope="col">SKU</th><th scope="col">核心配方</th><th scope="col">规格/营养目标*</th><th scope="col">卖点（食材工艺）</th><th scope="col">主推期/合规语言</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>白燕轻乳<br>高蛋白奶燕窝杯<br><span class="tagline tag-cup">首发英雄</span></td>
+          <td>超滤高蛋白奶 200 mL（蛋白 6 g/100mL 级）、即食燕窝（干盏 1.5 g 当量）、少量燕麦增稠</td>
+          <td>220 mL，冷链 21 天；98 kcal；蛋白 12.9 g；脂肪 1.0 g；碳水 9.4 g；钙 251 mg</td>
+          <td>奶是稠的、燕窝是滑的，一勺两层质地；口感对标甜品店燕窝奶冻，标签对标高蛋白酸奶；「蛋白顶两个鸡蛋」，办公室喝不显眼</td>
+          <td>全期；蛋白 6.45 g/100mL 达液体「高蛋白」、脂肪 0.5 g/100mL 达「脱脂/低脂」、钙 125 mg/100mL 达「高钙」门槛，均以送检为准</td>
+        </tr>
+        <tr>
+          <td>双白杯<br>豆乳燕窝杯<br><span class="tagline tag-cup">植物基</span></td>
+          <td>浓豆乳 220 mL（蛋白 5–6 g/100mL 浓浆，非转基因大豆）、即食燕窝（干盏 1.5 g 当量）；钙强化至 200 mg 目标（GB 14880 适用类别法规复核后执行）</td>
+          <td>240 mL，冷链；≈110 kcal；植物蛋白 ≈12.5 g；脂肪 ≈3.5 g；零乳糖、零胆固醇；钙目标 200 mg</td>
+          <td>豆乳的白、燕窝的白，一杯双白；豆香压住蛋清味；乳糖不耐与素食家庭的那一杯；大豆蛋白氨基酸评分居植物蛋白前列</td>
+          <td>全期；蛋白声称按浓浆实测；钙强化复核未过则按豆乳天然钙标注、不做钙声称</td>
+        </tr>
+        <tr>
+          <td>鲜盏<br>低糖即食燕窝杯<br><span class="tagline tag-water">礼品流通</span></td>
+          <td>燕窝（干盏 3 g 当量）、冰糖 ≤5 g/100mL、红枣/枸杞少量</td>
+          <td>200 mL，冷链或常温灭菌（按工艺验证）；33 kcal；蛋白 1.8 g；糖 ≤5 g/100mL；唾液酸 0.23–0.38 g</td>
+          <td>最传统的即食燕窝形态，整盏可见、糖度减半、配料表看得懂；礼品流通主力，探望场景闭眼买</td>
+          <td>全期·礼赠；「低糖」≤5 g/100mL（以送检为准）；唾液酸标注取批次最低限值；过敏强制标注</td>
+        </tr>
+        <tr>
+          <td>乌麻燕<br>黑芝麻核桃燕窝杯<br><span class="tagline tag-cup">风味款</span></td>
+          <td>黑芝麻 10 g（纯芝麻研磨）、核桃仁 8 g（≤15 g 限重）、即食燕窝（干盏 1.5 g 当量）、低脂奶基底 150 mL</td>
+          <td>220 mL，冷链；≈160 kcal；蛋白 ≈6.5 g；脂肪 ≈10 g（以坚果不饱和脂肪为主）；钙 ≈190 mg（芝麻自带）</td>
+          <td>像一杯可以喝的芝麻糊但不糊嘴；芝麻细得看不见颗粒、核桃碎嚼得到；下午一杯顶到晚饭，替代奶茶饼干</td>
+          <td>D2/D3；钙按检测标注；高脂食材严格小剂量锁量</td>
+        </tr>
+        <tr>
+          <td>奶胶杯<br>花胶奶冻<br><span class="tagline tag-risk">候选·研发中</span></td>
+          <td>花胶（鱼胶）小块＋低脂奶/椰奶少量＋燕窝可选；奶冻形态</td>
+          <td>150 g；待打样测算（花胶干品蛋白约 80 g/100g，胶原蛋白为主）</td>
+          <td>燕窝之外的第二个东方胶质载体；勺挖着吃</td>
+          <td>待定；花胶为传统普通食品，腥味脱除与凝胶工艺验证通过再排期，不占首发资源</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted)">* 配方框架估算值（奶/豆基底每 200 mL 基线见配方数据底稿），以打样送检为准。</p>
+  <div class="callout rule">
+    <span class="ct">钙缺口的直接打击</span>
+    <p>13 省调查乳母膳食钙中位仅 412.6 mg/d、8.1% 达推荐，根因是奶摄入低（月子期牛奶食用频率 23.5%）。白燕轻乳一杯 251 mg 钙＋12.9 g 蛋白，双白杯钙强化目标 200 mg，正打在缺口上；豆乳钙强化的 GB 14880 适用类别为研发前置法规项，复核结论决定双白杯是否可作钙声称。</p>
+  </div>
+
+  <h3 class="block">11.2 轻杯线循证依据总表</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>轻杯线 SKU → 循证依据 → 文献来源</caption>
+      <thead><tr><th scope="col">SKU / 食材</th><th scope="col">循证依据</th><th scope="col">来源 / DOI</th></tr></thead>
+      <tbody>
+        <tr><td>超滤高蛋白奶（白燕轻乳基底）</td><td>乳母钙仅 8.1% 达 RNI、维 D 70.6% 不足；奶 400–500 mL/d 可获钙约 540 mg</td><td>13 省调查（<span class="ev b">B</span> PMC7362564）；T/CNSS 014（<span class="ev a">A</span>）</td></tr>
+        <tr><td>浓豆乳（双白杯基底）</td><td>大豆蛋白氨基酸评分居植物蛋白前列；零乳糖、零胆固醇；钙强化需 GB 14880 复核</td><td>DRIs 2023（<span class="ev a">A</span>）</td></tr>
+        <tr><td>即食燕窝（全线）</td><td>唾液酸干重 7.64%–12.52%（天然食物中较高区间）；蛋白为半完全蛋白，5 g 干品蛋白约 3 g</td><td>宋咏烨等（中国食物与营养 2024，<span class="ev b">B</span>）；科普中国</td></tr>
+        <tr><td>黑芝麻＋核桃（乌麻燕）</td><td>黑芝麻钙 780 mg/100g、铁 22.7 mg；核桃 n-3 脂肪酸；须严格控量（脂肪极高）</td><td>《中国食物成分表》第 6 版</td></tr>
+        <tr><td>钙（白燕轻乳目标 251 mg/杯）</td><td>乳母钙推荐 1000 mg/d；13 省乳母中位仅 412.6 mg/d；一杯 251 mg 直接填补 25%</td><td>13 省调查（<span class="ev b">B</span>）；DRIs 2023（<span class="ev a">A</span>）</td></tr>
+        <tr><td>蛋白（白燕轻乳目标 12.9 g/杯）</td><td>乳母蛋白 RNI 80 g/d（+25 g）；训练叠加需 1.6–2.0 g/kg/d</td><td>DRIs 2023（<span class="ev a">A</span>）；运动营养共识（<span class="ev b">B</span> PMID 28698222）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+<section class="chapter" id="ch12">
+  <h2><span class="num">12</span>产品线三：<span class="tagline tag-water">每日水</span> 有口感的养生补水（4 款）</h2>
+  <p class="chapter-lead">哺乳期每日总液体需要约 2.3–2.6 L，比平时多 500–1000 mL。奶量由供需驱动、强迫饮水不增奶，但明显脱水可干扰喷乳反射；补水的真实障碍是白水没味道、浓汤太油腻。每日水用熟悉食材做有味道的水，低糖或无糖，350 mL 瓶装。全线原料出自药食同源名单（卫法监发〔2002〕51 号，无乳母禁忌标注）与普通食材。</p>
+  <div class="table-scroll">
+    <table>
+      <caption>每日水线 SKU 全表（营养数字为配方框架估算区间，以打样检测为准）</caption>
+      <thead><tr><th scope="col">SKU</th><th scope="col">核心配方</th><th scope="col">规格/营养目标*</th><th scope="col">卖点（食材工艺）</th><th scope="col">主推期/合规语言</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>五红水光饮<br><span class="tagline tag-water">首发英雄</span></td>
+          <td>赤小豆浓浆、红枣汁、红皮花生浆（花生 ≤20 g/份）、枸杞汁、山楂提酸；不加红糖，糖 ≤5 g/瓶</td>
+          <td>350 mL；≈60 kcal；蛋白 ≈2 g；低糖</td>
+          <td>五红汤是民间月子水里认知度最高的一碗；瓶装版甜味全靠红枣与山楂；礼赠与自饮双通路</td>
+          <td>D1/D2；植物性铁吸收率低，不接任何功效话头；只讲食材与低糖事实</td>
+        </tr>
+        <tr>
+          <td>西梅纤纤饮<br><span class="tagline tag-water">纤维款</span></td>
+          <td>西梅汁＋西梅果肉、菊粉（可溶性膳食纤维）、低糖</td>
+          <td>350 mL；≈70 kcal；膳食纤维目标 ≥6 g/瓶</td>
+          <td>西梅在孕产人群认知度高、无需教育；一瓶补 6 g 以上纤维；口感酸甜厚润</td>
+          <td>D1/D2；≥6 g/瓶达 GB 28050 液体「高膳食纤维」门槛（按检测标注）；菊粉胃肠耐受需验证</td>
+        </tr>
+        <tr>
+          <td>莓果水<br><span class="tagline tag-cup">清淡款</span></td>
+          <td>树莓、蓝莓、草莓混合浆果汁调香；无糖</td>
+          <td>350 mL；≈40 kcal；无糖</td>
+          <td>口味最清淡、可大口喝；四瓶水里的清爽位</td>
+          <td>全期；首发只卖无强化版；叶酸强化属 GB 14880 管控，审批前不做叶酸声称</td>
+        </tr>
+        <tr>
+          <td>桂花雪梨润饮<br><span class="tagline tag-water">润口款</span></td>
+          <td>雪梨清汁、桂花浸提、银耳多糖微量调稠感；糖 ≤5 g/瓶</td>
+          <td>350 mL；≈50 kcal；低糖</td>
+          <td>中式饮品接受度最广的清润组合；与燕窝品牌的东方质感一脉相承；银耳微量糯感</td>
+          <td>D2/D3；讲风味与口感，不做功效表述</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted)">* 配方框架估算值，以打样送检为准。四瓶水口味分工：五红厚重、西梅酸甜、莓果清淡、桂花温润。</p>
+
+  <h3 class="block">12.3 每日水线循证依据总表</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>每日水线 SKU → 循证依据 → 文献来源</caption>
+      <thead><tr><th scope="col">SKU / 食材</th><th scope="col">循证依据</th><th scope="col">来源 / DOI</th></tr></thead>
+      <tbody>
+        <tr><td>哺乳期补水需求</td><td>乳母需水量 +500–1000 mL/d；乳汁 87%–90% 为水；明显脱水经皮质醇升高干扰喷乳反射</td><td>T/CNSS 014（<span class="ev a">A</span>）；哺乳研究综述（<span class="ev b">B</span>）</td></tr>
+        <tr><td>赤小豆＋红衣花生＋枸杞（五红水光饮）</td><td>赤小豆干品蛋白 20.2 g、铁 7.4 mg、纤维丰富；去红糖降低糖摄入</td><td>《中国食物成分表》第 6 版</td></tr>
+        <tr><td>西梅汁＋菊粉（西梅纤纤饮）</td><td>乳母纤维中位仅 8.47 g/d、仅 2.0% 达 AI；西梅含山梨醇与纤维；菊粉为可溶性纤维</td><td>13 省调查（<span class="ev b">B</span>）；DRIs 2023（<span class="ev a">A</span>）</td></tr>
+        <tr><td>低糖设计（全线 ≤5 g/100mL）</td><td>GB 28050 低糖门槛 ≤5 g/100mL；红糖 96.6% 为蔗糖、久喝延长血性恶露</td><td>GB 28050-2011（<span class="ev a">A</span>）；医院营养科共识（<span class="ev c">C</span>）</td></tr>
+        <tr><td>银耳多糖微量调稠（桂花雪梨润饮）</td><td>银耳多糖为可溶性膳食纤维，热量极低，提供糯感</td><td>《中国食物成分表》</td></tr>
+        <tr><td>纤维声称（≥6 g/瓶达高纤维门槛）</td><td>GB 28050 液体高纤维门槛</td><td>GB 28050-2011（<span class="ev a">A</span>）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">风味扩展方向（二期候选，立项前须过法规门禁）</h3>
+  <ul class="bullets">
+    <li><b>玫瑰花风味：</b>民间对其有身材管理方面的附会期待，但相关表述属功效词、普通食品不得使用；重瓣红玫瑰等原料的普通食品身份依据与添加量需法规复核确认后立项，首发不进。</li>
+    <li><b>薏米（薏苡仁）风味：</b>薏苡仁在卫法监发〔2002〕51 号名单内、无乳母禁忌标注（孕期慎用争议与哺乳期无关），可作二期杂粮风味水候选；民间附会的功效认知产品不背书、不表述（禁用词见第 13 章）。</li>
+    <li><b>菊花、荷叶、淡竹叶：</b>同列药食同源名单但性偏凉，月子期（D1）不主推，可作夏季 D2/D3 限定。</li>
+  </ul>
+
+</section>
+<section class="chapter" id="ch13">
+  <h2><span class="num">13</span>三期统一订阅配餐平台</h2>
+  <p class="chapter-lead">每日产品组合按中国 DRIs 2023 乳母净摄入 +400 kcal 口径设计，承担增量中的加餐部分，正餐仍由家庭饮食承担。孕前偏瘦、孕期增重不足或双胎哺乳者按泌乳毛成本约 500 kcal/d 口径，每日可加 1 杯白燕轻乳（+98 kcal）；任何情况日摄入不破 1800 kcal 地板。三期盒子由营养师按阶段配餐，订阅用户随宝宝月龄自动切换。</p>
+  <div class="table-scroll">
+    <table>
+      <caption>三期订阅盒：每日产品组合与营养贡献（配方框架估算，以打样检测为准）</caption>
+      <thead><tr><th scope="col">盒型</th><th scope="col">阶段/内容结构</th><th scope="col">能量</th><th scope="col">蛋白（供能比）</th><th scope="col">铁 / 钙 / 脂肪</th><th scope="col">设计意图</th></tr></thead>
+      <tbody>
+        <tr><td><b>月里盒</b></td><td>D1 · 0–3 月；热食为主：渔盅/乌凤盅/红肉盅隔日轮换＋金粱羹早餐＋月里盏每周 2 盅＋每日水</td><td>375 kcal</td><td>29.0 g（31%）</td><td>铁 4.6 mg／钙 283 mg</td><td>热食为主、碳水占比高（粥羹山药）符合月子易消化；热量接近 +400，差额由正餐油脂补足；不刻意压脂肪到极低</td></tr>
+        <tr><td><b>随身盒</b></td><td>D2 · 3–6 月返工；冷食为主：白燕轻乳＋双白杯工作日双杯，周末热盅＋每日水</td><td>340 kcal</td><td>43.0 g（51%）</td><td>钙 506 mg</td><td>返工加餐营养密度拉满，蛋白供能比过半、碳水压低；钙 506 mg 达乳母日推荐 1000 mg 的一半</td></tr>
+        <tr><td><b>轻身盒</b></td><td>D3 · 6–12 月；冷杯＋红肉盅（牛腱）＋金粱羹，碳水下调、脱脂基底</td><td>314 kcal</td><td>38.5 g（49%）</td><td>铁 4.5 mg／脂肪 3.9 g</td><td>产品侧热量保守，缺口由正餐总量调节（不破 1800 kcal 地板）；牛腱单份铁 3.9 mg 全线最高，对接月经恢复后周期性失血；蛋白 80 g/d 保瘦体重</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13.5px;color:var(--muted)">贫血已确诊者遵医嘱补充元素铁 40–100 mg/d 持续至少 3 个月，产品不替代铁剂；减重速度红线每周 ≤0.5 kg、产后 6–8 周后启动。</p>
+
+  <h3 class="block">13.1 六大模块在三条产品线间的复用</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>统一配方平台：模块复用与验证点</caption>
+      <thead><tr><th scope="col">模块</th><th scope="col">暖盏</th><th scope="col">轻杯</th><th scope="col">每日水</th><th scope="col">关键验证</th></tr></thead>
+      <tbody>
+        <tr><td>燕窝基底</td><td>干盏 3 g 当量整盏可见</td><td>干盏 1.5–3 g 湿燕条</td><td>微量风味（可选）</td><td>投料量、CAIQ 溯源、唾液酸批次实测、亚硝酸盐</td></tr>
+        <tr><td>蛋白模块</td><td>鱼/乌鸡/牛腱/里脊 80–100 g 固体</td><td>超滤高蛋白奶、浓豆乳</td><td>赤小豆/花生浆少量</td><td>蛋白含量、热稳定、去刺与软烂度、豆乳浓度</td></tr>
+        <tr><td>糯感与纤维模块</td><td><b>银耳多糖＋燕窝胶质提供醇厚糯感，替代脂肪乳化浓稠</b>；莲子、山药、茯苓粉增糯增稠</td><td>燕麦少量增稠、燕窝滑感</td><td>银耳多糖微量调稠、菊粉（西梅款 ≥6 g/瓶）</td><td>流变与杀菌后口感、悬浮稳定性、菊粉胃肠耐受</td></tr>
+        <tr><td>碳水与糖模块</td><td>山药、小米、南瓜、红枣桂圆（控量）</td><td>奶基底乳糖、低糖</td><td>糖 ≤5 g/瓶，甜味靠红枣山楂</td><td>总糖检测、甜度 JAR、桂圆红枣每份 2–3 颗</td></tr>
+        <tr><td>东方风味模块</td><td>生姜、陈皮、紫苏、八角、枸杞</td><td>黑芝麻、核桃、红枣</td><td>五红、西梅、莓果、桂花雪梨</td><td>食药物质名单核对、香辛料剂量、当归仅限香辛料且不主打</td></tr>
+        <tr><td>包装与加热模块</td><td>280 g 盅装、水浴 8 分钟/微波 90 秒、冷链短保</td><td>200–250 mL 杯装、冷链 21 天</td><td>350 mL 瓶装、常温/冷链按工艺</td><td>灌装密封、杀菌工艺、两次冷凝撇油产线适配、成本</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">13.2 礼盒与订阅：节奏对齐产褥期与月子中心周期</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>组合装与渠道角色</caption>
+      <thead><tr><th scope="col">组合</th><th scope="col">内容</th><th scope="col">节奏依据</th><th scope="col">渠道角色</th></tr></thead>
+      <tbody>
+        <tr><td>「月子心意」探望礼盒</td><td>雪浪渔盅 2 ＋ 月里盏 2 ＋ 五红水光饮 2（六件装）</td><td>送礼人看到鱼汤、燕窝、五红觉得分量够；收礼人拿到一周真实加餐</td><td>电商礼赠、月子中心周边、医院周边零售</td></tr>
+        <tr><td>「婆婆妈妈安心箱」</td><td>雪浪渔盅、莲年红肉盅、五红水光饮、鲜盏</td><td>全部是民间认知里「月子该吃」的品类；产品替家庭完成撇油与配比</td><td>家庭采购、私域</td></tr>
+        <tr><td>28 天陪伴盒</td><td>按月里盒配比覆盖 28 天：热盅隔天、每日水每日、燕盏每周 2 次</td><td>产褥期为产后 42 天，28 天恰好覆盖国内月子中心典型入住周期；出所后续订无缝衔接</td><td>月子中心集采、出所转化订阅</td></tr>
+        <tr><td>三期订阅盒</td><td>月里盒 → 随身盒 → 轻身盒按月冷链配送，随箱附当期营养卡片（内容出自膳食指南）</td><td>对应 D1/D2/D3 生理与返工节奏</td><td>订阅制锁定复购，D2/D3 主力</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout gold">
+    <span class="ct">配餐卡片合规</span>
+    <p>随箱营养卡片同属广告监管范围：可写指南食物量教育（鱼禽蛋瘦肉 220 g/d、奶 400–500 mL/d、蔬菜 400–500 g/d、水分 +500–1000 mL）与「产褥期 28 天营养陪伴」时间事实；禁写调养类套餐名、功效承诺与「28 天回到孕前状态」等结果承诺（禁用词完整清单见第 13 章）。</p>
+  </div>
+</section>
+<section class="chapter" id="ch14">
+  <h2><span class="num">14</span>合规边界与声称矩阵</h2>
+  <p class="chapter-lead">孕产人群是食品监管的最高敏感区：食用者处于哺乳期，标签、广告、客服话术、用户口碑、随箱卡片同属监管范围。本章把全案所有红线集中列示一次——其他章节只做合规化表述，禁用词只在本章出现。三条产品路径（普通食品、保健食品蓝帽子、GB 31601 特殊膳食）的声称边界先定调，再落到原料红线、禁用词对照、含量声称门槛与数字纪律。</p>
+
+  <h3 class="block">14.1 三条法规路径与本线选择</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>三条产品路径的声称边界（依据食品安全法及对应国标）</caption>
+      <thead><tr><th scope="col">路径</th><th scope="col">法规依据</th><th scope="col">可以说什么</th><th scope="col">不能说什么</th></tr></thead>
+      <tbody>
+        <tr><td><b>普通食品</b><br>（暖盏热盅、冷杯、每日水首发路径）</td><td>《食品安全法》第 71 条、第 73 条：标签说明书与广告不得涉及疾病预防、治疗功能，内容应当真实合法</td><td>配料、口味、工艺、文化传统、成分含量事实、按 GB 28050 标注的营养成分表与达标营养声称</td><td>一切保健功能与疾病相关表述；孕产调养类、增乳类、气血类、恢复类承诺一律不可（详见 12.3 禁用词表）</td></tr>
+        <tr><td><b>保健食品（蓝帽子）</b></td><td>食品安全法第 75–79 条；功能声称须注册或备案、广告须省级审查</td><td>仅限现行《允许保健食品声称的保健功能目录》内功能</td><td>目录内没有增乳、月子调养、产后排瘀类功能；燕窝未列入保健食品原料目录，以燕窝为单一原料申报无现成路径</td></tr>
+        <tr><td><b>特殊膳食用食品</b><br>GB 31601—2015 孕妇及乳母营养补充食品</td><td>国家标准；生产许可按特殊膳食申证，标签按 GB 13432</td><td>定位「补充优质蛋白质和多种微量营养素」；每日份推荐量 ≤50 g；优质蛋白须来自大豆/大豆制品/乳/乳制品（占 18%–35%）；铁 7–16 mg、维 A 400–1200 μg、维 D 3–10 μg、B12 1.3–5.2 μg 为必需成分</td><td>同样不得声称疾病预防治疗与调养功效；标签须强制标注「本品不能代替正常膳食」「与其他同类产品同时食用时应注意用量」；热食盅与甜盅不适用该品类形态，可作为冷杯线（豆乳/乳基底）的并行论证路径</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout rule">
+    <span class="ct">路径结论</span>
+    <p><b>首发全线走普通食品路径</b>，标签执行 GB 7718＋GB 28050；冷食杯中的高蛋白奶/豆乳产品并行论证 GB 31601 特殊膳食申报的可行性（蛋白来源限定为乳与大豆，恰好匹配白燕轻乳与双白杯配方方向），作为二期可选升级；叶酸等营养强化受 GB 14880 管控，首发 SKU 不碰强化，豆乳钙强化的适用类别须经法规顾问书面复核后方可落地（见拍板问题 3、4）。</p>
+  </div>
+
+  <h3 class="block">14.2 原料红线：13 种红灯药材、含醇与药品目录</h3>
+  <div class="callout warn">
+    <span class="ct">原料红灯（不可谈判）</span>
+    <p><b>国家卫健委、市场监管总局两份公告明示「孕妇、哺乳期妇女及婴幼儿等特殊人群不推荐食用」的 13 种食药物质，一律不进配料表、不进品名、不进话术：</b><br>
+    2023 年第 9 号公告 9 种——党参、肉苁蓉、铁皮石斛、西洋参、黄芪、灵芝、山茱萸、天麻、杜仲叶；<br>
+    2024 年公告 4 种——地黄、麦冬、天冬、化橘红。<br>
+    四物汤、八珍汤、十全大补汤等传统整方原料大部分触红线或属药品目录，<b>整方不可用</b>；川芎、白术、益母草等不在任何食品名单的药材一律禁用（《食品安全法》第三十八条：食品中不得添加药品）。</p>
+  </div>
+  <ul class="bullets">
+    <li><b>当归</b>：仅可按香辛料调味品身份放 1–2 片做背景调味，品名与配料表不得主打、不得宣传；山柰、西红花、草果、姜黄、荜茇同属香辛料限定名单，按调味品使用。</li>
+    <li><b>含醇配料全线禁用</b>：醪糟、月子酒、甜酒、料酒等任何含酒精配料不进任何 SKU，去腥靠姜、陈皮、紫苏。酒精自由通过血乳屏障、无安全阈值，且抑制喷乳反射；「煮沸即挥发」是误解——加入液体煮沸 15 分钟仍残留约 40% 酒精、炖 1 小时仍残留约 25%（USDA 实测数据）。</li>
+    <li><b>金针菜（黄花菜）</b>：只用干制、充分泡发、沸水焯透的原料；鲜品含秋水仙碱，禁止使用。</li>
+    <li><b>猪蹄</b>：非法规红线，属高油高嘌呤的产品决策问题——不进首发 SKU（拍板问题 2）；味型用花生（≤20 g/份）＋瘦猪里脊/牛腱承接。</li>
+    <li><b>燕窝安全标注</b>：燕窝可引起 IgE 介导的过敏反应（皮疹、哮喘，严重可致过敏性休克），标签与详情页强制标注「燕窝过敏者、蛋白质过敏者慎食」；不建议给婴幼儿直接食用；进口燕窝须凭 CAIQ 溯源、正规渠道可溯源。</li>
+    <li><b>鱼类合规</b>：只用低汞鱼种（黑鱼、鲫鱼等淡水鱼及 FDA/EPA「最佳选择」类），禁用鲨鱼、剑鱼、国王鲭、大眼金枪鱼等高汞鱼；鱼品来源随批索证。</li>
+    <li><b>药食同源可用名单</b>：山药、莲子、茯苓、赤小豆、红枣、枸杞、桂圆、黑芝麻、核桃、陈皮、紫苏等 87 种名单内食材正常使用，但<b>按碳水/蛋白/脂肪做营养学配比，不讲药材功效</b>。</li>
+  </ul>
+
+  <h3 class="block">14.3 声称红线：禁用词与合规替代表达对照表</h3>
+  <p>下表左列为<b>全案禁用词</b>（包装、详情页、直播、客服、私域、随箱卡片、用户笔记引导均不得出现），中列为禁用原因，右列为允许的合规替代方向。</p>
+  <div class="table-scroll">
+    <table>
+      <caption>禁用词 ↔ 合规替代表达矩阵</caption>
+      <thead><tr><th scope="col">禁用表述（示例）</th><th scope="col">禁用原因</th><th scope="col">合规替代方向</th></tr></thead>
+      <tbody>
+        <tr><td>下奶、催乳、催奶、追奶、增乳、回奶</td><td>普通食品不得声称保健功能；奶量由供需驱动、喝汤饮水不增乳，无科学依据</td><td>「哺乳期每餐带汤的饮食习惯」「一份温热加餐」；只讲水分、食材与场景</td></tr>
+        <tr><td>补血、补气、养血、气血双补</td><td>保健功能声称；植物铁吸收率低，红枣红糖达不到补铁剂量</td><td>「牛腱血红素铁来源」＋按 GB 28050 标注铁含量与 NRV%；补铁就医交给医院</td></tr>
+        <tr><td>排恶露、逐瘀、促进子宫恢复</td><td>涉及疾病治疗/生理功能调节，普通食品严禁</td><td>不设置任何对应表达；只讲产褥期 28 天营养陪伴的时间事实</td></tr>
+        <tr><td>月子调理、月子病、产后修复、产后恢复、调理体质</td><td>保健/医疗功能暗示；「调理」为中医功效语境</td><td>「产后 0–12 个月营养加餐」「出院后的餐桌陪伴」；食物多样不过量的指南语言</td></tr>
+        <tr><td>安神、助眠、改善睡眠、缓解焦虑、抗抑郁、预防产后抑郁</td><td>保健功能与疾病声称；营养与情绪仅为观察性相关，无治疗证据</td><td>「睡前一碗清甜」的场景描述；营养均衡事实；情绪问题引导专业筛查与就医</td></tr>
+        <tr><td>养颜、美容、美白、抗衰、乌发、补脑、变聪明、促进宝宝大脑发育</td><td>保健功能声称；燕窝相关主张仅动物/体外证据，无人体 RCT</td><td>成分事实：「燕窝唾液酸为天然食物中较高区间」「唾液酸是母乳天然成分」；文化事实：东南亚数百年孕产传统</td></tr>
+        <tr><td>减肥、瘦身、减脂、掉秤、瘦回孕前、长胎不长肉</td><td>保健功能声称；哺乳期减重有医学边界（≥1800 kcal/d、≤0.5 kg/周），食品不做体重承诺</td><td>低脂肪/低糖的<b>营养成分含量声称</b>（须过 GB 28050 门槛并经检测）；「食材本味、控糖控油」的工艺事实</td></tr>
+        <tr><td>增强免疫力、提高抵抗力、抗病毒</td><td>保健功能声称；仅动物实验证据</td><td>蛋白质、维生素含量事实与 NRV% 标注</td></tr>
+        <tr><td>健脾、润燥、祛湿、滋阴、温补等中医功效词</td><td>普通食品不得使用中医药效语境</td><td>替换为口感与食材语言：「粉糯」「清甜」「醇厚」「温热一碗」</td></tr>
+        <tr><td>「28 天瘦回孕前」「出月子气色判若两人」等结果承诺</td><td>虚假/暗示功效宣传，广告法与食品安全法双重风险</td><td>指南食物量教育（鱼禽蛋瘦肉 220 g/d、奶 400–500 mL/d、蔬菜 400–500 g/d）与时间事实</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout warn">
+    <span class="ct">比较声称纪律（暖盏低脂叙事专项）</span>
+    <p>「脂肪低」只能作为<b>营养素含量事实</b>陈述，必须同时满足四条：① 标明参照基准——「相较传统家常炖法／同等份量传统浓汤」，不得只说「降低 90%」无参照；② 以第三方检测报告支撑（产品样品与家常基准样品同口径检测），未完成检测前不上包装、不进广告；③ 达到 GB 28050「低脂」门槛（液体 ≤1.5 g/100 mL；半固态按固体口径 ≤3 g/100 g 评估）才可用「低脂」声称词，未达标只陈述实测脂肪克数；④ 严禁引申为体重管理、身材恢复等任何功效。本线现阶段唯一可公开表达的实测降幅是<b>选料层「乌鸡较老母鸡原料脂肪实测下降约 91%（陆路等实测研究）」</b>；成品盅对家常基准碗 58%–88% 为推算区间、90% 以上为验证目标（见第 9 章）。</p>
+  </div>
+
+  <h3 class="block">14.4 营养声称门槛与标签数字纪律</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>GB 28050-2011 营养声称门槛与本线对应 SKU</caption>
+      <thead><tr><th scope="col">声称</th><th scope="col">门槛（液体口径）</th><th scope="col">本线设计对应</th></tr></thead>
+      <tbody>
+        <tr><td>高蛋白</td><td>≥6 g/100 mL，或蛋白质供能比 ≥20%</td><td>白燕轻乳（蛋白目标 12.9 g/份）、双白杯（浓豆乳 5–6 g/100mL 体系）送检达标后声称</td></tr>
+        <tr><td>低脂</td><td>≤1.5 g/100 mL（液体）；半固体按固体口径 ≤3 g/100 g 评估</td><td>暖盏盅（2.3–6.2 g/280 g 目标区间）按半固体口径送检评估；未达标不使用「低脂」字样，只标实测值</td></tr>
+        <tr><td>低糖</td><td>≤5 g/100 mL（或 100 g）</td><td>鲜盏、每日水全系按 ≤5 g/100 mL 设计，送检达标后声称</td></tr>
+        <tr><td>高钙</td><td>≥60 mg/100 mL 且提供 ≥15% NRV</td><td>白燕轻乳（钙目标 251 mg/份）送检达标后声称；双白杯钙强化待 GB 14880 复核</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="bullets">
+    <li><b>数字纪律</b>：全部 SKU 营养数字为配方框架估算，<b>对外标注值不得早于打样送检实测值</b>；唾液酸按批次实测、宣传取最低批限值（干盏唾液酸文献区间 7.64%–12.52%）。</li>
+    <li><b>燕窝投料</b>：燕窝制品投料比不得低于 1%（QB/T 5916—2023）；燕窝蛋白为半完全蛋白，产品中与奶、蛋、肉搭配互补，不宣传「燕窝补蛋白」。</li>
+    <li><b>渠道同责</b>：内容社区、私域客服、达人笔记中的用户口碑同属广告监管范围——「用户说能增乳」也不可放任，客服话术库按本章替代表预制，禁止自由发挥功效承诺。</li>
+    <li><b>证据留白</b>：乳母 DHA 专项摄入、乳母胆碱专项调查、DRIs 钙口径（800 vs 1000 mg）等待补数据不补数、不写死；产品配方按更保守的 1000 mg/d 钙口径设计，纸质版 DRIs 核对后冻结。</li>
+  </ul>
+</section>
+<!-- 15 研发验证计划与拍板清单 -->
+<section class="chapter" id="ch15">
+  <h2><span class="num">15</span>研发验证计划与七个拍板问题</h2>
+  <p class="chapter-lead">从配方框架到可上架商品，中间隔着五道验证关。任何数字在过链之前都是内部估算，任何声称在终审签字之前都不上包装。七个拍板问题不定，打样无法启动。</p>
+
+  <h3 class="block">15.1 五步验证链</h3>
+  <div class="lines">
+    <div class="line-card warm">
+      <h4>第一步 · 打样（0–6 周）</h4>
+      <p>三英雄 SKU 先行：雪浪渔盅（滚制乳化工艺定型）、白燕轻乳（超滤奶＋燕窝灌装）、五红水光饮（低糖萃取）。同步打样乌凤盅、莲年红肉盅与月里盏 4 小款。重点验证「糯感替代浓稠」：燕窝胶质＋银耳多糖的质地是否在去脂后仍被盲测判定为「醇厚」。</p>
+    </div>
+    <div class="line-card warm">
+      <h4>第二步 · 第三方送检（6–10 周）</h4>
+      <p>每 SKU 送检能量、蛋白、脂肪、碳水、糖、钠、铁、钙；燕窝盅加检唾液酸（批次实测取最低批限值）、亚硝酸盐、微生物。<b>同步制备「家常基准样品」</b>：猪脚汤、肥老母鸡汤、油煎鲫鱼汤按典型家庭做法同口径送检。</p>
+    </div>
+    <div class="line-card cup">
+      <h4>第三步 · 货架期与冷链验证（8–14 周）</h4>
+      <p>热食盅走冷藏短保（0–4℃），验证 72 小时/7 天两档保质期内微生物、质构与燕窝形态稳定性；冷杯与每日水验证 7–21 天货架期。</p>
+    </div>
+    <div class="line-card cup">
+      <h4>第四步 · 300 种子用户家庭场景测试（12–20 周）</h4>
+      <p>上海、杭州 300 个产后家庭，按月里盒形态配送 4 周。核心验证：婆婆/妈妈认不认得、产妇续不续购、送礼有没有面。</p>
+    </div>
+    <div class="line-card water">
+      <h4>第五步 · 合规终审与量产放行（18–24 周）</h4>
+      <p>法规顾问对配料表、营养标签、详情页、客服话术库、随箱卡片做全量终审，对照第 14 章禁用词矩阵逐项签字。</p>
+    </div>
+  </div>
+  <div class="callout teal">
+    <span class="ct">三条放行原则</span>
+    <p>① <b>数字未检不标</b>；② <b>声称未审不说</b>（含客服与私域全部对外文本）；③ <b>口感盲测不过不上</b>——去脂后的「糯」若不被目标家庭判定为好喝醇厚，工艺回炉。</p>
+  </div>
+
+  <h3 class="block">15.2 七个拍板问题</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>七个拍板问题（不定不打样）</caption>
+      <thead><tr><th scope="col">#</th><th scope="col">拍板事项</th><th scope="col">选项与建议</th><th scope="col">影响面</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><b>品牌与系列命名</b>：<b>小鲜孕</b> vs <b>小鲜后</b> 双候选</td><td>两案并行商标查重与语感测试后定</td><td>商标注册、包装、全渠道物料</td></tr>
+        <tr><td>2</td><td><b>猪蹄去留</b></td><td>建议不进首发（脂肪 18.8 g/100g）；味型用花生＋牛腱承接</td><td>暖盏 SKU 名单与低脂叙事</td></tr>
+        <tr><td>3</td><td><b>双白杯豆乳钙强化</b>（GB 14880 复核）</td><td>法规意见前按不强化配方打样</td><td>双白杯高钙声称是否成立</td></tr>
+        <tr><td>4</td><td><b>奶胶杯（花胶）与叶酸强化排期</b></td><td>候选，二期论证</td><td>轻杯二期 SKU 与特殊膳食路径</td></tr>
+        <tr><td>5</td><td><b>冷链形态与供应链</b></td><td>冷食委托、热食种子城市合建产线</td><td>资产投入、上市城市范围</td></tr>
+        <tr><td>6</td><td><b>订阅定价与盒型</b></td><td>建议月里盒 2380、随身盒 2180、轻身盒 1980</td><td>订阅转化与客群分层</td></tr>
+        <tr><td>7</td><td><b>是否并入既有战略站点</b></td><td>建议作为产后分册共享证据库</td><td>内容资产复用</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout rule">
+    <span class="ct">会议输入文件</span>
+    <p>本报告、Postpartum_Product_Matrix_v1、Postpartum_Product_Formula_Data、Postpartum_Quarterly_Nutrition、Postpartum_Nutrition_Evidence、v5 战略策划蓝本。</p>
+  </div>
+</section>
+
+
+<section class="chapter" id="ch16">
+  <h2><span class="num">16</span>价格、渠道与上市节奏</h2>
+  <p class="chapter-lead">定价锚定三个已被验证的付费习惯：鲜炖燕窝月套餐 1500–3000 元/月、月子中心 28 天 4 万元起、精品商超冷杯 20–35 元。小鲜后用「月子中心餐桌的零头价格」承接出院家庭，用鲜炖燕窝已跑通的订阅习惯放大客单。</p>
+
+  <h3 class="block">16.1 价格带与价值锚</h3>
+  <div class="table-scroll">
+    <table>
+      <caption>三系列与订阅的价格带设计</caption>
+      <thead><tr><th scope="col">品类</th><th scope="col">价格带</th><th scope="col">价值锚与对标</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tagline tag-warm">暖盏</span> 热食炖盅</td><td><b>28–48 元/盅</b>（月里盏燕窝甜盅 58–88 元）</td><td>对标月子餐外送单餐 40–80 元的一半；雪浪渔盅/乌凤盅主销 32–38 元，带肉固体上盅支撑「一餐」价值</td></tr>
+        <tr><td><span class="tagline tag-cup">轻杯</span> 冷食营养杯</td><td><b>18–32 元/杯</b></td><td>对标即食燕窝单瓶 40–60 元下沿与高蛋白酸奶/即食营养杯上沿；白燕轻乳 26–32 元、双白杯 18–22 元</td></tr>
+        <tr><td><span class="tagline tag-water">每日水</span></td><td><b>8–15 元/瓶</b></td><td>对标无糖茶饮与风味水 6–12 元；高纤维配方与「月子水」心智支撑小幅溢价</td></tr>
+        <tr><td><b>三期订阅盒</b></td><td><b>2000–2600 元/月</b>（每日一盅＋一杯＋一水结构）</td><td>对标鲜炖燕窝月套餐主流 1500–3000 元/月，但交付完整加餐结构而非一盏；为月子中心 28 天 4 万起的约 1/20</td></tr>
+        <tr><td><b>礼盒</b>（探病/满月礼）</td><td><b>398–888 元/盒</b></td><td>月里盏礼盒承接燕窝礼赠心智；五红水光饮整箱装做轻礼</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="block">16.2 四条渠道</h3>
+  <div class="layer">
+    <div class="lc"><b>① 电商订阅（基本盘）</b><br>天猫/京东/抖音旗舰店＋小程序自营，月套餐预付订阅为主，复用鲜炖燕窝冷链直达与周期扣款心智；冷杯与每日水全国可发，热食盅限冷链城市上线。</div>
+    <div class="lc"><b>② 月子私域与机构（精准入口）</b><br>与月子中心、产康机构、医院周边母婴店合作：出馆礼盒＋首月订阅卡，承接「出院之后 11 个月」空位；月嫂渠道做培训物料与返佣，解决决策链触达。</div>
+    <div class="lc"><b>③ 精品商超冷柜（信任背书）</b><br>Ole'、盒马等精品超市冷柜上轻杯与每日水，热食盅进短保冷藏柜（核心城市）；线下陈列解决「看得见的信任」与礼赠即时购买。</div>
+    <div class="lc"><b>④ 礼赠企业团购（现金流）</b><br>满月酒、企业生育福利、母婴平台积分兑换；月里盏礼盒与五红水整箱装为主，节点集中在孕产高峰与节庆。</div>
+  </div>
+
+  <h3 class="block">16.3 上市节奏（GTM 三阶段）</h3>
+  <div class="roadmap">
+    <div class="phase">
+      <h4>阶段一 · 0–3 月：打样与验证</h4>
+      <p>三英雄 SKU（雪浪渔盅、白燕轻乳、五红水光饮）打样送检；家常基准样品对比检测；月里盒包装与随箱卡片设计；品牌命名拍板与商标查重；法规顾问进场过配料表。</p>
+    </div>
+    <div class="phase">
+      <h4>阶段二 · 4–6 月：上海、杭州种子市场</h4>
+      <p>300 个产后家庭 4 周场景测试跑通（第 14 章第四步）；热食盅冷链日配在双城验证履约；私域＋月子中心转介为主要获客；冷杯与每日水同步上电商全国试销（冷链压力小）；收集复购与决策链反馈，冻结 SKU 微调。</p>
+    </div>
+    <div class="phase">
+      <h4>阶段三 · 7–12 月：长三角铺开与全国冷食</h4>
+      <p>热食订阅盒扩展至长三角核心城市；冷杯、每日水全国电商与精品商超冷柜；礼盒赶中秋/春节礼赠季；奶胶杯等候选 SKU 按数据决定转正；二期叶酸强化、GB 31601 特殊膳食申报视法规意见启动。</p>
+    </div>
+  </div>
+  <div class="callout gold">
+    <span class="ct">上市次序逻辑</span>
+    <p><b>冷食先行、热食跟进、订阅收口。</b>轻杯与每日水可委托既有鲜炖/饮品供应链、全国冷链可发、合规压力最小，先跑品牌与现金流；暖盏热盅是差异化核心也是唯一重资产增量（冷藏短保产线＋核心城市日配），放在种子城市验证履约后再扩；订阅盒是最终形态——把已被验证的单品类付费习惯，升级为「一餐＋一杯＋一水」的全月结构。</p>
+  </div>
+</section>
+<section class="chapter" id="ch17">
+  <h2><span class="num">17</span>最终建议</h2>
+  <p class="chapter-lead">三句话结论：赛道空位真实且有标准窗口；产品不需要发明、只需要把婆婆的老菜谱按营养学重新配比；现在就该进打样，因为窗口属于第一个把「出院后的月子餐桌」做成标准品牌的人。</p>
+  <div class="conclusion">
+    <p><b>一、立即进入打样，不等完美方案。</b>三英雄 SKU——雪浪渔盅、白燕轻乳、五红水光饮——分别代表热食、冷食、补水三个消费场景与三条供应链，4 周内启动打样、10 周内拿到送检报告与家常基准对比数据。脂肪降幅叙事严格按第 9 章诚实口径执行：选料层 91% 实测降幅现在可以说，成品 90% 以上降幅在基准样品对比检测达成前不上包装。</p>
+    <p><b>二、聚焦「月里盒＋三英雄」打透种子城市。</b>不追求 13 款齐发：首发只需验证「婆婆认得、产妇续购、送礼有面」三个假设。月里盒（375 kcal 目标）是承接月子中心出院流量的拳头产品，上海、杭州 300 个家庭 4 周测试是全年最关键的一笔投入。</p>
+    <p><b>三、把合规能力当作核心资产建设。</b>13 种红灯药材零进入、含醇配料零容忍、禁用词矩阵进客服话术库、全部数字以送检为准——在一个「同行普遍踩线」的品类里，干净的标签本身就是高端品牌的信任状。燕窝做礼遇与糯感载体，营养支点放在蛋白、铁、钙、碘、DHA、胆碱这些有指南级证据的缺口上。</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat"><div class="v">13＋1</div><div class="k">款 SKU：暖盏 5＋轻杯 4＋候选 1＋每日水 4</div></div>
+    <div class="stat"><div class="v">0–12 月</div><div class="k">出院之后全周期覆盖，三期订阅盒 375/340/314 kcal</div></div>
+    <div class="stat"><div class="v">91%</div><div class="k">选料层脂肪实测降幅（乌鸡对老母鸡，B 级研究）</div></div>
+    <div class="stat"><div class="v">2000–2600</div><div class="k">元/月订阅价格带，对标鲜炖月套餐、月子中心零头</div></div>
+  </div>
+</section>
+<section class="chapter" id="refs">
+  <h2><span class="num">A</span>附录 A · 分级参考资料</h2>
+  <p class="chapter-lead">证据分级：<span class="ev a">A 规范</span>（政府指南、国家标准、法规、权威机构声明）　<span class="ev b">B 研究</span>（系统综述、Meta 分析、RCT、人群调查、成分实测研究）　<span class="ev c">C 市场</span>（行业报告、媒体监测、品牌资料，仅作市场量级参考）　<span class="ev d">D 探索</span>（动物实验、体外研究、机制假说，不可外推为人体功效）。本附录合并 v5 战略策划证据表（e1–e26）与循证底稿 Postpartum_Nutrition_Evidence.md 的一手来源，去重后共 33 条；可点击链接为官方原文或公开报道。</p>
+  <ol class="refs">
+    <li><span class="ev a">A</span>　<b>中国营养学会团体标准 T/CNSS 014—2022《产褥期妇女膳食指导》</b>：月子膳食的营养定位与文化习俗、心理照护属性；产褥期食物多样不过量原则。</li>
+    <li><span class="ev a">A</span>　<b>中国营养学会《中国居民膳食营养素参考摄入量（DRIs 2023）》第九版</b>：乳母能量 +400 kcal/d、蛋白质 80 g/d、铁 24 mg/d、碘 240 μg/d、叶酸 550 μg DFE/d、胆碱 520 mg/d、DHA ≥200 mg/d；钙口径 800 vs 1000 mg 待纸质版核对（配方按 1000 mg 保守设计）。</li>
+    <li><span class="ev a">A</span>　<b>《中国居民膳食指南（2022）》哺乳期妇女膳食指南</b>（含《哺乳期妇女膳食指南》，中华围产医学杂志 2016,19(10):721-726）：鱼禽蛋瘦肉 220 g/d、奶 400–500 mL/d、蔬菜 400–500 g/d、水分 +500–1000 mL/d；每周 2–3 次低汞鱼 227–340 g；忌烟酒、避免浓茶咖啡；官方明确「喝汤饮水不增加乳汁分泌」「不宜喝多油浓汤」。</li>
+    <li><span class="ev b">B</span>　<b>中国 13 省 954 名乳母膳食营养调查</b>（PMC7362564 等系列研究）：钙摄入中位数 412.6 mg/d、仅 8.1% 达 RNI；膳食纤维 8.47 g/d；维生素 D 缺乏＋不足 70.6%；叶酸 87.5% 未达标；能量 83.8% 低于 EER。</li>
+    <li><span class="ev b">B</span>　<b>Zhao 等 2019，三城市 495 名哺乳期妇女贫血队列</b>：哺乳期贫血率 32.0%，产后 1–2 月达峰 35.2%；WHO 产后贫血定义与补铁方案（轻度口服元素铁 40–100 mg/d ≥3 个月）。</li>
+    <li><span class="ev b">B</span>　<b>王美辰等 2021，孕产期营养补充剂使用追踪</b>：补剂使用率由孕期 82.0% 跌至产后 6 个月 47.8%；铁补充率由 20.3% 跌至 1.45%。</li>
+    <li><span class="ev b">B</span>　<b>汪之顼等，月子期食物禁忌与膳食结构调查</b>：产褥期牛奶食用频率仅 23.5%，奶、蔬菜、水果被传统禁忌压制。</li>
+    <li><span class="ev a">A</span>　<b>杨月欣主编《中国食物成分表》标准版第 6 版</b>（国家食物与营养健康数据平台 nlc.chinanutri.cn）：全部食材能量、蛋白、脂肪、碳水、铁、钙基线值，SKU 配方测算依据。</li>
+    <li><span class="ev b">B</span>　<b>陆路等《中华传统肉食煲汤的基本营养成分》</b>（中国食品发酵工业研究院，《食品工业科技》）：煲汤蛋白溶出率 7.80%–22.98%、200 mL 汤蛋白最多 3.18 g；乌鸡/老母鸡原料脂肪 23.4 vs 259.7 mg/g（选料层降幅约 91%）；煲 5 h 汤脂肪 1.1 vs 9.6 mg/mL（汤体层降幅约 88.5%）；清水滚制鱼汤脂肪 0.3–0.6 g/100mL。</li>
+    <li><span class="ev b">B</span>　<b>宋咏烨等《燕窝营养成分研究进展》</b>（《中国食物与营养》2024，北京大学公共卫生学院，8 篇文献综述）：干燕窝蛋白 56.34%–69.5%、唾液酸 7.64%–12.52%（天然食物中最高区间）；燕窝蛋白为半完全蛋白。</li>
+    <li><span class="ev b">B</span>　<b>中国成人胆碱摄入研究</b>（Br J Nutr 2025；中疾控营养与健康白皮书 2025）：成人胆碱摄入仅 3.7% 达 AI；女性 AI 380–400 mg、乳母 520 mg/d；一枚鸡蛋约含胆碱 120–150 mg。</li>
+    <li><span class="ev b">B</span>　<b>CFSA 2021 中国居民鱼类消费风险评估</b>：育龄妇女海水鱼平均消费仅 14.77 g/d；乳母 DHA 专项摄入数据国内空白（留白处理）。FDA/EPA《Advice about Eating Fish》2022：每周 2–3 份最佳选择鱼类，禁食鲨鱼/剑鱼/国王鲭/大眼金枪鱼。</li>
+    <li><span class="ev b">B</span>　<b>产后体重滞留研究</b>（7 城市母婴队列，Matern Child Nutr 2020；Obesity Reviews 2024，PMC6888503）：约 75% 女性产后 1 年未恢复孕前体重、25% 滞留 ≥5 kg；12 个月平均滞留 3.3 kg；孕期脂肪储备约产后 6 个月耗尽。哺乳期安全减重 ≤0.5 kg/周、热量地板 1800 kcal/d。</li>
+    <li><span class="ev a">A</span>　<b>GB 28050-2011《食品安全国家标准 预包装食品营养标签通则》</b>：高蛋白（液体 ≥6 g/100mL 或供能比 ≥20%）、低脂（液体 ≤1.5 g/100mL）、低糖（≤5 g/100mL）、高钙（液体 ≥60 mg/100mL 且 ≥15% NRV）等营养声称门槛。</li>
+    <li><span class="ev a">A</span>　<b>国家卫健委、市场监管总局 2023 年第 9 号公告</b>：党参、肉苁蓉、铁皮石斛、西洋参、黄芪、灵芝、山茱萸、天麻、杜仲叶 9 种食药物质，明示「孕妇、哺乳期妇女及婴幼儿等特殊人群不推荐食用」。<a target="_blank" rel="noopener noreferrer" href="https://www.samr.gov.cn/xw/sj/art/2023/art_8d005589c2914083a4aa9442102babf8.html">市场监管总局原文</a>｜<a target="_blank" rel="noopener noreferrer" href="https://www.nhc.gov.cn/sps/c100088/202311/a7e49f9f0285437b82b842576fa8ede9.shtml">卫健委解读</a></li>
+    <li><span class="ev a">A</span>　<b>国家卫健委、市场监管总局 2024 年公告</b>：地黄、麦冬、天冬、化橘红 4 种新增食药物质，同样明示哺乳期妇女不推荐食用。<a target="_blank" rel="noopener noreferrer" href="https://www.samr.gov.cn/xw/sj/art/2024/art_e7fe6775e09d45d78069961cc328d0a2.html">市场监管总局原文</a></li>
+    <li><span class="ev a">A</span>　<b>卫法监发〔2002〕51 号《卫生部关于进一步规范保健食品原料管理的通知》及 2014 年当归等 6 种新增公告</b>：87 种药食同源名单；当归、山柰、西红花、草果、姜黄、荜茇仅限香辛料和调味品使用。</li>
+    <li><span class="ev a">A</span>　<b>GB 14880《食品安全国家标准 食品营养强化剂使用标准》</b>：叶酸、钙等强化剂适用类别与剂量；豆乳钙强化适用类别待法规复核。</li>
+    <li><span class="ev c">C</span>　<b>QB/T 5916—2023《燕窝制品》行业标准；GH/T 1092《燕窝质量等级》</b>：燕窝制品投料比不得低于 1%；干盏唾液酸分级 ≥10/7/5 g/kg；进口燕窝须凭 CAIQ 溯源。</li>
+    <li><span class="ev a">A</span>　<b>《中华人民共和国食品安全法》</b>（2025 年修正）第三十八条、第七十一条、第七十三条、第七十五–七十九条：食品中不得添加药品；标签与广告不得涉及疾病预防、治疗功能；保健食品功能声称须注册或备案。GB 31601—2015《孕妇及乳母营养补充食品》：每日份 ≤50 g、优质蛋白限大豆/乳来源（18%–35%）、强制标注「本品不能代替正常膳食」。</li>
+    <li><span class="ev a">A</span>　<b>国家统计局《2025 年国民经济和社会发展统计公报》（2026-02-28）</b>：2025 年出生人口 792 万、出生率 5.63‰；生育支持政策（育儿补贴、普惠托育）持续推进。<a target="_blank" rel="noopener noreferrer" href="https://www.stats.gov.cn/sj/zxfbhjd/202602/t20260228_1962662.html">国家统计局原文</a></li>
+    <li><span class="ev c">C</span>　<b>弗若斯特沙利文《中国月子中心行业研究》；艾媒咨询月子中心市场数据</b>：市场规模 2017 年不足百亿增至 2025 年近 300 亿元；家庭护理渗透率 2018 年 6.9%→2023 年 16.2%，其中月子中心 1.0%→5.5%；台湾地区约 50%。<a target="_blank" rel="noopener noreferrer" href="http://www.cb.com.cn/index/show/bzyc/cv/cv135252541644">中国经营网报道</a></li>
+    <li><span class="ev c">C</span>　<b>月子中心行业报告（2025，多源交叉）</b>：单客均价约 6.8 万元/28 天，医养结合型约 6.82 万元；头部高端门店 10–22 万元。</li>
+    <li><span class="ev c">C</span>　<b>即食滋补行业分析（未来智库/行业报告，2025）</b>：2024 年即食滋补品市场规模首次达到传统滋补品的 50%；鲜炖燕窝以周期订阅跑通，头部两家合计份额超 60%。<a target="_blank" rel="noopener noreferrer" href="https://www.vzkoo.com/read/20251120d6b80e3e4364590e6165326e.html">未来智库原文</a></li>
+    <li><span class="ev c">C</span>　<b>魔镜 CMI 燕窝电商监测（2024-03 至 2025-02）</b>：速食燕窝线上销售额约 69.98 亿元、同比 +16.09%；18–30 岁消费者占 31.29%；月套餐模式高增长；均价 415–509 元/件。<a target="_blank" rel="noopener noreferrer" href="https://www.mktindex.com/research/notebook/article_20250522">魔镜分析原文</a></li>
+    <li><span class="ev c">C</span>　<b>产后送餐/月子餐服务行业调查（恒州诚思等，2026）；T/CAS 823—2024《产后营养膳食服务规范》</b>：全国持证月子餐机构两千余家、高度分散、无全国品牌；76.3% 家庭愿为专业增值服务支付溢价；95/00 后拒绝「长辈凭经验做饭」模式；T/CAS 823 于 2024 年 7 月实施。<a target="_blank" rel="noopener noreferrer" href="https://test.yhresearch.cn/news/14720/postpartum-meal-delivery-service">恒州诚思分析</a></li>
+    <li><span class="ev a">A</span>　<b>哺乳期酒精与咖啡因权威口径</b>：AAP 2024 年 Pediatrics 政策声明（哺乳期不饮酒最安全；偶尔少量饮酒后等待约 2 小时/标准杯）、NIH LactMed、ABM Clinical Protocol #21；USDA 烹饪酒精残留数据（煮沸 15 分钟残留约 40%、1 小时约 25%、2.5 小时约 5%）；咖啡因 ≤300 mg/d（中国 2022 指南建议婴儿 3 个月内乳母避免）。</li>
+    <li><span class="ev b">B</span>　<b>产后抑郁流行病学与营养相关综述</b>：全球合并患病率 17.2%（565 项研究、80 国 meta），中国 14.8%–21.4%；围产期抑郁与维 D、铁、B12、叶酸、锌相关性系统综述（Nutrients 2025，58 项研究，PMC12610701 等）——仅观察性相关、无治疗证据；一线干预为 EPDS 筛查、心理治疗与就医转诊。</li>
+    <li><span class="ev a">A</span>　<b>产后运动恢复指南</b>：ACOG Committee Opinion No. 804（2020）；2025 年产后运动国际指南（BMJ 2025，574 项研究：产后前 3 个月 ≥120 分钟/周中高强度活动＋每日盆底训练）；恶露 4–6 周净、子宫复旧 6–8 周、盆底显著恢复期 3–6 个月（产科学教材与综述）。</li>
+    <li><span class="ev d">D</span>　<b>燕窝功效机制研究（探索性证据）</b>：综述《Edible Bird's Nest as a Potential Cognitive Enhancer》（PMC9120600）汇总 10 余项动物/体外研究（唾液酸与神经发育、免疫、抗氧化方向）；均无人体 RCT，不可外推为人体功效；美容/EGF 方向证据不足或否定。</li>
+    <li><span class="ev b">B</span>　<b>燕窝安全性与过敏</b>：新加坡儿童食物过敏队列中燕窝为已识别过敏原之一，可致 IgE 介导皮疹、哮喘乃至过敏性休克；广州市第一人民医院/人民网健康 2016、科普中国 2019：过敏体质与蛋白质过敏者慎食，不建议婴幼儿（尤其 4–6 月龄内）直接食用；东南亚与华南健康成人常规量（干品 3–5 g/d）有长期食用史。</li>
+    <li><span class="ev b">B</span>　<b>哺乳期汤水与奶量证据</b>：泌乳由催乳素/催产素调控，第一驱动为频繁有效排空；强迫饮水不增加奶量，明显脱水可经皮质醇升高干扰喷乳反射；浓汤脂肪与嘌呤高、蛋白质主要留在肉里（溶出率仅 7.8%–23%），乳汁脂肪过高可致婴儿脂肪消化不良性腹泻与乳汁淤积风险。</li>
+    <li><span class="ev b">B</span>　<b>民间月子食材证据评估</b>：红糖约 95%–96.6% 为蔗糖、铁为非血红素铁且吸收率极低、久喝可能延长血性恶露（医院营养科共识）；红枣干品碳水 60%–80%、铁含量有限；鸡蛋每日 2–3 枚封顶；益母草不建议哺乳期使用（中国营养学会科普：可能经乳影响新生儿未成熟肝脏）；「回奶食物」「月子忌盐」「月子忌蔬果」均无科学证据。</li>
+  </ol>
+
+    <li><span class="ev b">B</span> <b>产后抑郁与营养关联最新综述</b>（Nutrients 2025，58 项研究，PMC12610701）：31/58 项报告围产期抑郁与维 D、铁、B12、叶酸、锌至少一种呈显著负相关；维 D 为被研究最多、负相关最一致的营养素。</li>
+    <li><span class="ev b">B</span> <b>中国产后抑郁流行病学</b>：2019 年 meta（17 省 24 项研究 38,357 人）总体 15%（95%CI 12–17%）；Nature SSR 2026 武汉队列 3061 人：1 月 16.8%、6 月 13.6%；广东医科大学 2025 厦门调查 971 人：焦虑 18.02%、抑郁 28.42%（SDS 自评）；国家卫健委蓝皮书 2025：维持 14.8%，中度及以上 41.2%。</li>
+    <li><span class="ev b">B</span> <b>中国农村产后抑郁</b>（PRRM 2026，湖北农村 IPT 试点 RCT）：中国农村产后抑郁率 32.0%； culturally adapted IPT 显著降低 EPDS 评分（DOI: 10.2147/PRRM.S566784）。</li>
+    <li><span class="ev a">A</span> <b>ACOG Committee Opinion 804</b>（2020）：产后体力活动指南；第四孕期概念覆盖产后前 3 个月。</li>
+    <li><span class="ev a">A</span> <b>BMJ 2025 产后运动国际指南</b>：分析 574 项研究，产后前 3 月 ≥120 min/周中高强度活动＋每日盆底训练。</li>
+    <li><span class="ev a">A</span> <b>BJOG 2024 产后运动共识</b>：个性化渐进式产后运动方案；盆底功能恢复标准。</li>
+    <li><span class="ev b">B</span> <b>产后力量训练与蛋白需求</b>：运动营养学会立场（PMID 28698222）：保肌蛋白 1.6–2.2 g/kg/d；每餐 0.3–0.4 g/kg 均匀分布（PMID 22150425）；哺乳期运动不影响奶量与婴儿发育。</li>
+    <li><span class="ev b">B</span> <b>产后体重滞留中国数据</b>：赖建强全国营养科普大会：41% 女性孕期增重超标；产后 1–2 年较孕前平均重 3 kg；39% 在产后两年滞留超过 5 kg。</li>
+    <li><span class="ev a">A</span> <b>WHO 母乳喂养指南</b>（2022 更新）：纯母乳 6 月、继续哺乳至 2 岁；乳母均衡膳食。</li>
+    <li><span class="ev a">A</span> <b>SOGC 产后随访指南</b>（2022）：从单次 6 周检查转为持续关怀模式，3 周内初次接触。</li>
+    <li><span class="ev a">A</span> <b>T/CAS 823—2024《产后营养膳食服务规范》</b>：2024 年 7 月实施，首次为月子餐服务建立行业标准。</li>
+    <li><span class="ev b">B</span> <b>Cell 2025 肠道菌群与产后抑郁</b>：罗伊氏乳杆菌 DSM17938 降低 41% 产后抑郁风险（待更多验证）。</li>
+    <li><span class="ev b">B</span> <b>Physical Therapy in Sport 2025</b>：产后盆底肌训练与恢复方案；1/3 产妇产后运动时尿失禁。</li>
+
+  <div class="callout rule">
+    <span class="ct">证据使用声明</span>
+    <p>C 级市场数字来自商业研究机构与媒体监测，不同口径存在差异，仅用于市场量级与趋势判断；产品决策以 A/B 级证据为准。D 级动物与体外研究不得用于任何人体功效表达。证据缺口（乳母 DHA/胆碱专项、DRIs 钙口径、家常基准碗实测值、百合蛋白两版成分差异）按留白处理，待补不猜，清单见附录 B。</p>
+  </div>
+</section>
+<section class="chapter" id="appx-b">
+  <h2><span class="num">B</span>附录 B · 假设与待补数据清单</h2>
+  <p class="chapter-lead">本报告全部 SKU 营养数字为按投料量测算的配方框架估算值（标注「配方目标区间，以打样检测为准」）。以下假设与缺口须在研发验证链（第 14 章）中逐项闭合，闭合前不得进入对外宣称。</p>
+  <div class="table-scroll">
+    <table>
+      <caption>待补数据与假设清单</caption>
+      <thead><tr><th scope="col">#</th><th scope="col">事项</th><th scope="col">当前处理口径</th><th scope="col">闭合方式</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><b>DRIs 2023 乳母钙口径差异</b>：膳食指南/团标为 1000 mg/d，DRIs 文献转引为 800 mg/d</td><td>配方按更保守的 1000 mg/d 设计，报告正文标注口径差</td><td>纸质版《中国居民膳食营养素参考摄入量（2023）》核对后冻结</td></tr>
+        <tr><td>2</td><td><b>乳母 DHA 与胆碱专项摄入数据</b>国内空白</td><td>以育龄妇女鱼类消费 14.77 g/d 与成人胆碱 3.7% 达标率推断缺口方向，不杜撰乳母专项数字</td><td>跟踪新发文献；产品以鸡蛋、深海鱼、奶豆食材做结构性补充</td></tr>
+        <tr><td>3</td><td><b>家常浓汤基准碗无成品实测</b>：猪脚汤 ≈18.8 g、肥老母鸡汤 ≈13.1 g、油煎奶白鲫鱼汤 ≈8.8 g（280 g 碗，按食材成分与溶出率推算）</td><td>成品盅对基准碗降幅 58%–88% 标注为推算区间；90% 以上列为验证目标，不上包装</td><td>第 14 章第二步：三种家常基准样品与产品样品同口径第三方送检</td></tr>
+        <tr><td>4</td><td><b>双白杯豆乳钙强化</b>的 GB 14880 适用类别</td><td>首发按不强化配方打样，钙值取豆乳本底；高钙声称暂挂</td><td>法规顾问书面意见（拍板问题 3）</td></tr>
+        <tr><td>5</td><td><b>百合蛋白成分两版数据差异</b></td><td>配方测算取保守低值，不写死</td><td>以《中国食物成分表》标准版与打样送检实测校准</td></tr>
+        <tr><td>6</td><td><b>叶酸强化与 GB 31601 特殊膳食路径</b></td><td>首发不碰强化；冷杯线并行论证特殊膳食申报可行性</td><td>二期法规论证与申报（拍板问题 4）</td></tr>
+        <tr><td>7</td><td><b>燕窝唾液酸批次波动</b>（干盏文献区间 7.64%–12.52%）</td><td>宣传取最低批限值，按批次实测标注</td><td>每批投料燕窝入厂检测；成品唾液酸送检</td></tr>
+        <tr><td>8</td><td><b>热食盅冷藏货架期</b>（72 小时/7 天两档）与微波复热口感衰减</td><td>以行业短保冷藏产品经验预设两档</td><td>第 14 章第三步货架期与质构验证</td></tr>
+        <tr><td>9</td><td><b>种子用户复购与决策链假设</b>（「婆婆认得、产妇续购、送礼有面」）</td><td>作为 300 家庭测试的验证命题，未预设结论</td><td>第 14 章第四步场景测试，4 周复购率与 NPS 数据说话</td></tr>
+        <tr><td>10</td><td><b>品牌方燕窝人体试验</b>（企业称已完成免疫方向人群试验）</td><td>未获同行评议发表文本，不予采信</td><td>取得公开发表文本后重新评估证据等级</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</main>
+</div></div>
+
+<footer>
+  <div class="wrap">
+    <p><b>小鲜孕 / 小鲜后（双候选命名）产后营养产品线市场调研与产品策划报告</b> · v3 · 2026-08-30<br>
+    蓝本：小鲜后产后产品线战略策划 v5（2026-08-30）；配套底稿：Postpartum_Nutrition_Evidence（循证综述）、Postpartum_Product_Formula_Data（配方测算）、Postpartum_Product_Matrix_v1（合规矩阵）、Postpartum_Quarterly_Nutrition（三期营养地图）。<br>
+    本文件全部 SKU 营养数字为配方框架估算值，以打样送检为准；市场数据来自 C 级商业研究机构，仅供内部决策参考；本品为普通食品，不具有疾病预防、治疗功能，不能代替药物与正常膳食。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var progress = document.getElementById('progress');
+  var toc = document.getElementById('toc');
+  var toggle = document.getElementById('tocToggle');
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+    if(progress){ progress.style.width = pct + '%'; }
+    var links = toc ? toc.querySelectorAll('a[href^="#"]') : [];
+    var current = '';
+    for(var i=0;i<links.length;i++){
+      var t = document.querySelector(links[i].getAttribute('href'));
+      if(t && t.getBoundingClientRect().top < 160){ current = links[i].getAttribute('href'); }
+    }
+    for(var j=0;j<links.length;j++){
+      links[j].parentNode.classList.toggle('active', links[j].getAttribute('href') === current);
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+  if(toggle && toc){
+    toggle.addEventListener('click', function(){
+      var open = toc.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    toc.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth < 1100){ toc.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }
+    });
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id && id.length > 1){
+        var t = document.querySelector(id);
+        if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); history.replaceState(null,'',id); }
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
